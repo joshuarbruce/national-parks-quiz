@@ -297,9 +297,12 @@ function renderQuestion() {
     const btn = document.createElement("button");
     btn.className   = "answer-btn";
     btn.textContent = label;
+    if (rawAnswers[q.id] === val) btn.classList.add("selected");
     btn.addEventListener("click", () => handleAnswer(val));
     answers.appendChild(btn);
   });
+
+  document.getElementById("back-btn").style.display = currentQ > 0 ? "block" : "none";
 }
 
 function handleAnswer(val) {
@@ -510,6 +513,14 @@ function highlightCard(code) {
 
 // ── Init ──────────────────────────────────────────────────────────────────
 
+function goBack() {
+  if (currentQ > 0) {
+    currentQ--;
+    renderQuestion();
+  }
+}
+
+document.getElementById("back-btn").addEventListener("click", goBack);
 document.getElementById("start-btn").addEventListener("click", startQuiz);
 document.getElementById("retake-btn").addEventListener("click", () => {
   if (leafletMap) { leafletMap.remove(); leafletMap = null; }
