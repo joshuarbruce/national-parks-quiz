@@ -204,10 +204,12 @@ html, body {
   line-height: 1.45;
   width: 100%;
 }
-.answer-btn:hover {
-  border-color: var(--accent);
-  background: var(--accent-dim);
-  transform: translateX(5px);
+@media (hover: hover) {
+  .answer-btn:hover {
+    border-color: var(--accent);
+    background: var(--accent-dim);
+    transform: translateX(5px);
+  }
 }
 .answer-btn.selected {
   border-color: var(--accent);
