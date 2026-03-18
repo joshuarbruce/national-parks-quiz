@@ -49,6 +49,6 @@ Map tiles by [CARTO](https://carto.com/), © [OpenStreetMap](https://www.openstr
 
 ## Copyright
 
-Quiz code and design © 2025 Joshua Bruce. All rights reserved.
+Quiz code and design © 2026 Joshua Bruce. All rights reserved.
 
 Data belongs to its respective sources as noted above.
