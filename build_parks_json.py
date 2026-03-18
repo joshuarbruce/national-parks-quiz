@@ -40,14 +40,15 @@ def main():
             "description":      str(row["description"])[:220].rstrip() + "…",
             "peak_month":       int(row["peak_month"]),
             "avg_annual_visits": int(row["avg_annual_recreationvisits"]),
-            "n_trails":         int(row["n_trails"]),
-            "total_trail_km":   round(float(row["total_trail_km"]), 1),
+            "n_trails":         int(row["n_trails"]) if pd.notna(row["n_trails"]) else 0,
+            "total_trail_km":   round(float(row["total_trail_km"]), 1) if pd.notna(row["total_trail_km"]) else 0.0,
             "crowd_score":       round(float(row["crowd_score"]),       3),
             "challenge_score":   round(float(row["challenge_score"]),   3),
             "roughing_it_score": round(float(row["roughing_it_score"]), 3),
             "wildlife_score":    round(float(row["wildlife_score"]),    3),
             "lushness_score":    round(float(row["lushness_score"]),    3),
             "seasonality_score": round(float(row["seasonality_score"]), 3),
+            "water_score":       round(float(row["water_score"]),       3),
         })
 
     out = Path(__file__).parent / "parks_data.js"

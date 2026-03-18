@@ -2,7 +2,7 @@
 
 const DIMENSIONS = [
   "crowd_score", "challenge_score", "roughing_it_score",
-  "wildlife_score", "lushness_score", "seasonality_score",
+  "wildlife_score", "lushness_score", "seasonality_score", "water_score",
 ];
 
 const DIM_LABELS = {
@@ -12,6 +12,7 @@ const DIM_LABELS = {
   wildlife_score:    "Wildlife focus",
   lushness_score:    "Lush ecosystem",
   seasonality_score: "Peak-season park",
+  water_score:       "Water access",
 };
 
 const RANK_COLORS = ["#f5a623", "#60a5fa", "#34d399", "#c084fc", "#fb923c"];
@@ -148,6 +149,27 @@ const QUESTIONS = [
       [1.00, "Dealbreaker — I want the full experience"],
     ],
   },
+  // ── Water access ───────────────────────────────────────────────────────
+  {
+    id: "water_1", dimension: "water_score",
+    text: "Water on a park trip is:",
+    answers: [
+      [0.00, "Scenery I appreciate from shore — I'm not getting in"],
+      [0.33, "A bonus if there's a good swimming hole or fishing spot"],
+      [0.67, "Part of my plan — I'll paddle, fish, or swim if it's there"],
+      [1.00, "The whole point — I want to kayak, snorkel, or be on the water"],
+    ],
+  },
+  {
+    id: "water_2", dimension: "water_score",
+    text: "Your ideal park setting:",
+    answers: [
+      [0.00, "High and dry — peaks, canyons, or open desert"],
+      [0.33, "Forested with streams and waterfalls, but hiking is the focus"],
+      [0.67, "Lakeside or river valley where water is always nearby"],
+      [1.00, "Coastal, island, or open bay — water as far as I can see"],
+    ],
+  },
 ];
 
 // ── Quiz engine ───────────────────────────────────────────────────────────
@@ -235,6 +257,11 @@ function dimReason(dim, val) {
       "Great year-round — no need to time your visit",
       "Moderate seasonality — some shoulder-season charm",
       "Classic summer park — go in July–August for full access",
+    ],
+    water_score: [
+      "Landscape-focused — the drama here is on land, not water",
+      "Some water access — lakes or rivers for fishing and paddling",
+      "Water-centric — kayaking, snorkeling, or boating are the main draws",
     ],
   };
   const idx = val < 0.35 ? 0 : val < 0.65 ? 1 : 2;
