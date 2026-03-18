@@ -1,6 +1,6 @@
 # Which National Park Are You?
 
-A personality quiz that matches you to one of 30 major US national parks based on your travel preferences. Answer 12 questions about crowds, trail difficulty, camping style, wildlife, landscape, and seasonality — and get a ranked list of your top 5 parks with an interactive map.
+A personality quiz that matches you to one of 49 major US national parks based on your travel preferences. Answer 12 questions about crowds, trail difficulty, camping style, wildlife, landscape, and seasonality — and get a ranked list of your top 5 parks with an interactive map.
 
 **Live at:** https://joshuarbruce.com/national-parks-quiz/
 
