@@ -190,11 +190,15 @@ function scoreAnswers(raw) {
 
 function matchParks(userScores, parks, topN = 5) {
   const weights = {};
-  DIMENSIONS.forEach(d => { weights[d] = Math.abs(userScores[d] - 0.5) * 2; });
-  const totalW = Object.values(weights).reduce((a, b) => a + b, 0);
-  if (totalW === 0) DIMENSIONS.forEach(d => { weights[d] = 1; });
+  // Floor at 0.2 so neutral answers still contribute baseline distance.
+  // Without a floor, a neutral answer collapses a dimension's weight to 0,
+  // letting very different parks (e.g. Wrangell-St. Elias vs Mammoth Cave)
+  // appear as near-identical if the user was neutral on the separating dims.
+  DIMENSIONS.forEach(d => {
+    weights[d] = 0.2 + 0.8 * Math.abs(userScores[d] - 0.5) * 2;
+  });
 
-  const results = parks.map(park => {
+  const results = parks.map(park => {  // parks = pre-filtered subset
     const distSq = DIMENSIONS.reduce((sum, d) => {
       return sum + weights[d] * Math.pow(userScores[d] - park[d], 2);
     }, 0);
@@ -276,9 +280,83 @@ function fmtVisitors(n) {
 
 // ── App state ─────────────────────────────────────────────────────────────
 
-let currentQ   = 0;
-let rawAnswers = {};
-let leafletMap = null;
+let currentQ      = 0;
+let rawAnswers    = {};
+let leafletMap    = null;
+
+// Filter state
+let filterScope   = "any";   // "any" | "lower48" | "distance"
+let userLat       = null;
+let userLng       = null;
+let maxDistanceMi = null;
+let filteredParks = PARKS_DATA;
+
+const NON_LOWER48 = new Set([
+  "dena","katm","glba","wrst","lacl","gaar","kova","kefj",  // Alaska
+  "havo","hale",                                             // Hawaii
+  "viis",                                                    // Virgin Islands
+]);
+
+// ── Filter helpers ────────────────────────────────────────────────────────
+
+function haversineKm(lat1, lng1, lat2, lng2) {
+  const R = 6371, toRad = x => x * Math.PI / 180;
+  const dLat = toRad(lat2 - lat1), dLng = toRad(lng2 - lng1);
+  const a = Math.sin(dLat/2)**2 +
+            Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+async function lookupZip(zip) {
+  const url = `https://nominatim.openstreetmap.org/search?postalcode=${zip}&countrycodes=us&format=json&limit=1`;
+  const resp = await fetch(url, { headers: { "User-Agent": "national-parks-quiz/1.0" } });
+  if (!resp.ok) throw new Error("Lookup failed");
+  const data = await resp.json();
+  if (!data.length) throw new Error("ZIP code not found");
+  return { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) };
+}
+
+function computeFilteredParks() {
+  if (filterScope === "lower48") return PARKS_DATA.filter(p => !NON_LOWER48.has(p.code));
+  if (filterScope === "distance" && userLat !== null && maxDistanceMi !== null) {
+    const maxKm = maxDistanceMi * 1.60934;
+    return PARKS_DATA.filter(p => haversineKm(userLat, userLng, p.lat, p.lng) <= maxKm);
+  }
+  return PARKS_DATA;
+}
+
+function updateParkCount() {
+  const countEl  = document.getElementById("park-count");
+  const startBtn = document.getElementById("filter-start-btn");
+  if (filterScope !== "distance") {
+    countEl.textContent = ""; countEl.className = "park-count";
+    startBtn.disabled = false;
+    return;
+  }
+  if (userLat === null || maxDistanceMi === null) {
+    countEl.textContent = ""; startBtn.disabled = true;
+    return;
+  }
+  const parks = computeFilteredParks();
+  if (parks.length < 5) {
+    countEl.textContent = `Only ${parks.length} park${parks.length !== 1 ? "s" : ""} within range — try a larger distance.`;
+    countEl.className = "park-count warn";
+    startBtn.disabled = true;
+  } else {
+    countEl.textContent = `${parks.length} parks within range`;
+    countEl.className = "park-count";
+    startBtn.disabled = false;
+  }
+}
+
+function setUserLocation(lat, lng, msg, cls) {
+  userLat = lat; userLng = lng;
+  const status = document.getElementById("location-status");
+  status.textContent = msg; status.className = "location-status " + cls;
+  document.getElementById("dist-label").style.display = "";
+  document.getElementById("distance-options").style.display = "flex";
+  updateParkCount();
+}
 
 // ── Screen management ─────────────────────────────────────────────────────
 
@@ -355,7 +433,7 @@ function handleAnswer(val) {
 function finishQuiz() {
   document.getElementById("progress-fill").style.width = "100%";
   const userScores = scoreAnswers(rawAnswers);
-  const matches    = matchParks(userScores, PARKS_DATA);
+  const matches    = matchParks(userScores, filteredParks);
 
   renderResults(matches, userScores);
   showScreen("results");
@@ -541,15 +619,94 @@ function highlightCard(code) {
 // ── Init ──────────────────────────────────────────────────────────────────
 
 function goBack() {
-  if (currentQ > 0) {
-    currentQ--;
-    renderQuestion();
-  }
+  if (currentQ > 0) { currentQ--; renderQuestion(); }
 }
 
+// Welcome → Filter
+document.getElementById("start-btn").addEventListener("click", () => showScreen("filter"));
+
+// Filter: scope buttons
+document.querySelectorAll(".scope-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".scope-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    filterScope = btn.dataset.scope;
+    document.getElementById("location-panel").style.display =
+      filterScope === "distance" ? "flex" : "none";
+    updateParkCount();
+  });
+});
+
+// Filter: geolocation
+document.getElementById("geolocate-btn").addEventListener("click", () => {
+  const btn = document.getElementById("geolocate-btn");
+  btn.textContent = "📍 Locating…"; btn.disabled = true;
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      btn.textContent = "📍 Location found";
+      btn.classList.add("success");
+      setUserLocation(pos.coords.latitude, pos.coords.longitude, "Location detected", "ok");
+    },
+    err => {
+      btn.textContent = "📍 Use my location"; btn.disabled = false;
+      btn.classList.add("error");
+      const s = document.getElementById("location-status");
+      const msgs = {
+        1: "Permission denied — enter your ZIP code instead.",
+        2: "Location unavailable — geolocation requires HTTPS. Enter your ZIP code instead.",
+        3: "Request timed out — enter your ZIP code instead.",
+      };
+      s.textContent = msgs[err.code] || "Location failed — enter your ZIP code instead.";
+      s.className = "location-status err";
+    },
+    { timeout: 10000, enableHighAccuracy: false }
+  );
+});
+
+// Filter: ZIP lookup
+async function handleZipLookup() {
+  const zip = document.getElementById("zip-input").value.trim();
+  const status = document.getElementById("location-status");
+  if (!/^\d{5}$/.test(zip)) {
+    status.textContent = "Please enter a 5-digit ZIP code.";
+    status.className = "location-status err"; return;
+  }
+  status.textContent = "Looking up ZIP code…"; status.className = "location-status";
+  const btn = document.getElementById("zip-btn"); btn.disabled = true;
+  try {
+    const { lat, lng } = await lookupZip(zip);
+    setUserLocation(lat, lng, `ZIP ${zip} found`, "ok");
+  } catch(e) {
+    status.textContent = e.message; status.className = "location-status err";
+  }
+  btn.disabled = false;
+}
+document.getElementById("zip-btn").addEventListener("click", handleZipLookup);
+document.getElementById("zip-input").addEventListener("keydown", e => {
+  if (e.key === "Enter") handleZipLookup();
+});
+
+// Filter: distance buttons
+document.querySelectorAll(".dist-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".dist-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    maxDistanceMi = parseInt(btn.dataset.miles);
+    updateParkCount();
+  });
+});
+
+// Filter → Quiz
+document.getElementById("filter-start-btn").addEventListener("click", () => {
+  filteredParks = computeFilteredParks();
+  startQuiz();
+});
+
+// Back button within quiz
 document.getElementById("back-btn").addEventListener("click", goBack);
-document.getElementById("start-btn").addEventListener("click", startQuiz);
+
+// Retake → Filter (preserves previous filter selection)
 document.getElementById("retake-btn").addEventListener("click", () => {
   if (leafletMap) { leafletMap.remove(); leafletMap = null; }
-  startQuiz();
+  showScreen("filter");
 });

@@ -22,6 +22,41 @@
     </div>
   </section>
 
+  <!-- ── Filter ───────────────────────────────────────────────────────────── -->
+  <section id="filter" class="screen">
+    <div class="filter-inner">
+      <h2 class="filter-title">Which parks should we consider?</h2>
+
+      <div class="scope-options">
+        <button class="scope-btn active" data-scope="any">Any US park</button>
+        <button class="scope-btn" data-scope="lower48">Lower 48 states only</button>
+        <button class="scope-btn" data-scope="distance">Within distance of me</button>
+      </div>
+
+      <div id="location-panel" class="location-panel" style="display:none">
+        <p class="filter-sub">Your starting location:</p>
+        <div class="location-row">
+          <button id="geolocate-btn" class="btn-locate">📍 Use my location</button>
+          <span class="loc-or">or</span>
+          <div class="zip-row">
+            <input id="zip-input" class="zip-input" type="text" inputmode="numeric" placeholder="ZIP code" maxlength="5">
+            <button id="zip-btn" class="btn-zip">→</button>
+          </div>
+        </div>
+        <p id="location-status" class="location-status"></p>
+        <p id="dist-label" class="filter-sub" style="display:none">Maximum distance:</p>
+        <div id="distance-options" class="distance-options" style="display:none">
+          <button class="dist-btn" data-miles="500">500 mi</button>
+          <button class="dist-btn" data-miles="1000">1,000 mi</button>
+          <button class="dist-btn" data-miles="1500">1,500 mi</button>
+        </div>
+        <p id="park-count" class="park-count"></p>
+      </div>
+
+      <button id="filter-start-btn" class="btn-primary" style="margin-top:2rem">Start Quiz →</button>
+    </div>
+  </section>
+
   <!-- ── Quiz ────────────────────────────────────────────────────────────── -->
   <section id="quiz" class="screen">
     <div class="quiz-topbar">
