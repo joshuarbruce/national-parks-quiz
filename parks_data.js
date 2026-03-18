@@ -19,7 +19,13 @@ const PARKS_DATA = [
     "lushness_score": 0.061,
     "seasonality_score": 0.544,
     "water_score": 0.877,
-    "remote_score": 0.503
+    "remote_score": 0.503,
+    "family_score": 0.0,
+    "visitor_quotes": [
+      "Wild places settle into my soul with a deep sense of contentment and joy.",
+      "Pictures really can never do it justice",
+      "The abundance of wildlife truly blew me away!!"
+    ]
   },
   {
     "code": "yose",
@@ -39,7 +45,12 @@ const PARKS_DATA = [
     "lushness_score": 0.169,
     "seasonality_score": 0.267,
     "water_score": 0.489,
-    "remote_score": 0.555
+    "remote_score": 0.555,
+    "family_score": 0.0,
+    "visitor_quotes": [
+      "Yosemite is everything it's cracked up to be and more",
+      "I moved to the US two years ago for studies and became obsessed with the nature here"
+    ]
   },
   {
     "code": "grca",
@@ -59,7 +70,13 @@ const PARKS_DATA = [
     "lushness_score": 0.067,
     "seasonality_score": 0.155,
     "water_score": 0.489,
-    "remote_score": 0.511
+    "remote_score": 0.511,
+    "family_score": 0.194,
+    "visitor_quotes": [
+      "I just love the endless layered drama - red cliffs catching the afternoon light while deep shadows carve the canyon.",
+      "It was 100% as amazing as I remembered! I lucked out and was there when it was not crowded.",
+      "Fell in love with this place and the views. It was such an amazing experience."
+    ]
   },
   {
     "code": "zion",
@@ -79,7 +96,13 @@ const PARKS_DATA = [
     "lushness_score": 0.084,
     "seasonality_score": 0.155,
     "water_score": 0.0,
-    "remote_score": 0.722
+    "remote_score": 0.722,
+    "family_score": 0.049,
+    "visitor_quotes": [
+      "Utah is insanely underrated. What an otherwordly place.",
+      "I swear this place comes to me in my dreams so often now. So special.",
+      "It was absolutely beautiful with all of the snow!!"
+    ]
   },
   {
     "code": "brca",
@@ -99,7 +122,13 @@ const PARKS_DATA = [
     "lushness_score": 0.014,
     "seasonality_score": 0.275,
     "water_score": 0.0,
-    "remote_score": 0.757
+    "remote_score": 0.757,
+    "family_score": 0.049,
+    "visitor_quotes": [
+      "Sunrise at Inspiration Point. 9°F with 20-30mph winds. Completely worth it.",
+      "It was absolutely beautiful with all of the snow!!",
+      "Such an amazing view. As I understand it the horizon is over 80 miles away from where I am standing."
+    ]
   },
   {
     "code": "arch",
@@ -119,7 +148,13 @@ const PARKS_DATA = [
     "lushness_score": 0.064,
     "seasonality_score": 0.174,
     "water_score": 0.0,
-    "remote_score": 0.0
+    "remote_score": 0.0,
+    "family_score": 0.096,
+    "visitor_quotes": [
+      "Arches never ceases to amaze — Such a stunning park, have been many times now but every time there's a new angle or light that makes this park shine",
+      "I've never been to a national park before, Arches was amazing to see! It truly felt like another planet.",
+      "My first visit last week and I was blown away!"
+    ]
   },
   {
     "code": "care",
@@ -139,7 +174,13 @@ const PARKS_DATA = [
     "lushness_score": 0.058,
     "seasonality_score": 0.285,
     "water_score": 0.245,
-    "remote_score": 0.604
+    "remote_score": 0.604,
+    "family_score": 0.127,
+    "visitor_quotes": [
+      "It's a good mix of everything from Moab to Zion! Less crowds in November. It's cold! But wow breathtaking.",
+      "A short add-on to business in SLC, the last of the Mighty Five for us. Glad we made it, but wish we could have stayed longer. We managed to squeeze in 4 hikes and 2 Fruita pies!",
+      "We drove into Capitol Reef for the first time and caught this view. It's an amazing park!"
+    ]
   },
   {
     "code": "cany",
@@ -159,7 +200,13 @@ const PARKS_DATA = [
     "lushness_score": 0.046,
     "seasonality_score": 0.239,
     "water_score": 0.568,
-    "remote_score": 0.295
+    "remote_score": 0.295,
+    "family_score": 0.049,
+    "visitor_quotes": [
+      "I was overwhelmed by how vast it was.",
+      "This was when I truly began to feel the vastness of what protected lands mean. The sacredness of what they mean; petroglyphs, shelters, primordial civilizations that still exist within our society but pushed to the periphery.",
+      "Canyonlands National Park is criminally underrated."
+    ]
   },
   {
     "code": "romo",
@@ -179,7 +226,13 @@ const PARKS_DATA = [
     "lushness_score": 0.093,
     "seasonality_score": 0.457,
     "water_score": 0.245,
-    "remote_score": 0.453
+    "remote_score": 0.453,
+    "family_score": 0.096,
+    "visitor_quotes": [
+      "Rocky Mountain National Park served me a huge slice of humble pie today.",
+      "Even in the winter, it's always a fun hike up to Dream Lake in Rocky Mountain National Park",
+      "Dream Lake, one of our favorites at RMNP!"
+    ]
   },
   {
     "code": "olym",
@@ -199,7 +252,12 @@ const PARKS_DATA = [
     "lushness_score": 0.529,
     "seasonality_score": 0.531,
     "water_score": 0.877,
-    "remote_score": 0.479
+    "remote_score": 0.479,
+    "family_score": 0.218,
+    "visitor_quotes": [
+      "The most scenically diverse park I've been to. The Hoh rainforest was magical.",
+      "Incredibly diverse landscapes and the temperatures at this time were averaging low 60's. These are from Rialto beach, Second beach, Hoh and Quinault rainforests, Hurricane Ridge, and Cape Flattery."
+    ]
   },
   {
     "code": "noca",
@@ -219,7 +277,13 @@ const PARKS_DATA = [
     "lushness_score": 0.355,
     "seasonality_score": 0.779,
     "water_score": 0.687,
-    "remote_score": 0.604
+    "remote_score": 0.604,
+    "family_score": 0.0,
+    "visitor_quotes": [
+      "Hidden gem of the evergreen state!",
+      "The North Cascades exceeded expectations",
+      "Fell in love over Labor Day weekend"
+    ]
   },
   {
     "code": "mora",
@@ -239,7 +303,13 @@ const PARKS_DATA = [
     "lushness_score": 0.308,
     "seasonality_score": 0.607,
     "water_score": 0.388,
-    "remote_score": 0.469
+    "remote_score": 0.469,
+    "family_score": 0.073,
+    "visitor_quotes": [
+      "Mount Rainier really blew us away!",
+      "Pictures don't do it justice.",
+      "Conditions: sideways rain, storm force wind, freezing temps, and zero visibility. Photos: worth it"
+    ]
   },
   {
     "code": "crla",
@@ -259,7 +329,13 @@ const PARKS_DATA = [
     "lushness_score": 0.214,
     "seasonality_score": 0.705,
     "water_score": 0.632,
-    "remote_score": 0.601
+    "remote_score": 0.601,
+    "family_score": 0.148,
+    "visitor_quotes": [
+      "Woke up early to hike to Watchman's Tower and then went down for a swim right after the sun was up",
+      "Visited Crater Lake in September and it was cloudy when we arrived and for the first couple of hours. But then around lunchtime the sun came out and wow, it's lit",
+      "The lake looks like glass. A beautiful sight to behold."
+    ]
   },
   {
     "code": "redw",
@@ -279,7 +355,13 @@ const PARKS_DATA = [
     "lushness_score": 1.0,
     "seasonality_score": 0.271,
     "water_score": 0.813,
-    "remote_score": 0.86
+    "remote_score": 0.86,
+    "family_score": 0.145,
+    "visitor_quotes": [
+      "Overall loving it. It's a shame though that photos cannot display the beauty of these trees.",
+      "Loved the feeling of driving some of the back roads of the park in the fog and drizzle. Each bend in the road was like driving into the unknown.",
+      "These trees are truly incredible. I've traveled to two places where I didn't feel like I was on earth."
+    ]
   },
   {
     "code": "seki",
@@ -299,7 +381,13 @@ const PARKS_DATA = [
     "lushness_score": 0.204,
     "seasonality_score": 0.381,
     "water_score": 0.489,
-    "remote_score": 0.52
+    "remote_score": 0.52,
+    "family_score": 0.194,
+    "visitor_quotes": [
+      "Sequoia and Kings Canyon were breathtaking",
+      "I just drove the north and south entrance into sequoia (drove into kings canyon via hwy 180 and drove out of sequoia via south entrance). One of the most terrifying things I've ever done. Both of those drives. Hwy 180 had almost zero guardrails and an absolutely massive drop.",
+      "Yosemite and Sequoia / Kings Canyon get a lot more love (well earned) but Pinnacles is a quiet national park with some really unique hiking experiences."
+    ]
   },
   {
     "code": "glac",
@@ -319,7 +407,13 @@ const PARKS_DATA = [
     "lushness_score": 0.15,
     "seasonality_score": 0.686,
     "water_score": 0.846,
-    "remote_score": 0.701
+    "remote_score": 0.701,
+    "family_score": 0.096,
+    "visitor_quotes": [
+      "I wasn't ready for this much majesty.",
+      "Two weeks of setting up and tearing down camp in near-freezing temps and rain, issues with logistics, planning, and group tensions, but it was all worth it for the most jaw-dropping sights I've ever gotten to witness and hike in.",
+      "Water like glass in Glacier National Park."
+    ]
   },
   {
     "code": "grte",
@@ -339,7 +433,13 @@ const PARKS_DATA = [
     "lushness_score": 0.07,
     "seasonality_score": 0.531,
     "water_score": 0.956,
-    "remote_score": 0.185
+    "remote_score": 0.185,
+    "family_score": 0.049,
+    "visitor_quotes": [
+      "I'm not used to mountains looking so jagged. That means they're younger, right?",
+      "My absolute favorite park to date.",
+      "I just did a Grand Teton->Yellowstone->Glacier trip and it was epic."
+    ]
   },
   {
     "code": "dena",
@@ -359,7 +459,13 @@ const PARKS_DATA = [
     "lushness_score": 0.159,
     "seasonality_score": 0.693,
     "water_score": 0.245,
-    "remote_score": 0.708
+    "remote_score": 0.708,
+    "family_score": 0.096,
+    "visitor_quotes": [
+      "Just a drive in Denali around 11pm when the wildlife comes out and the sun makes the mountains glow",
+      "We were incredibly lucky to have a clear shot of Denali!",
+      "The crown jewel of the continent"
+    ]
   },
   {
     "code": "katm",
@@ -379,7 +485,12 @@ const PARKS_DATA = [
     "lushness_score": 0.132,
     "seasonality_score": 1.0,
     "water_score": 0.632,
-    "remote_score": 0.899
+    "remote_score": 0.899,
+    "family_score": 0.151,
+    "visitor_quotes": [
+      "Whimsical wildlife viewing against a dramatic volcanic landscape.",
+      "I'm determined to get there this summer. Brooks Camp permits became available today and I was ready as soon as they opened, but I was still too slow to snag a spot during peak salmon run."
+    ]
   },
   {
     "code": "sagu",
@@ -399,7 +510,13 @@ const PARKS_DATA = [
     "lushness_score": 0.084,
     "seasonality_score": 0.309,
     "water_score": 0.0,
-    "remote_score": 0.025
+    "remote_score": 0.025,
+    "family_score": 0.065,
+    "visitor_quotes": [
+      "I got caught in a monsoon storm on Sunday in Saguaro National Park. The setting sun transformed large raindrops into sparkling jewels.",
+      "Three years ago today, a rare winter storm transformed Saguaro National Park into something almost unrecognizable. Snow settled into the canyon, mist softened the distance, and the saguaros stood suspended between seasons.",
+      "We got up very early to go hiking, opted for shorter hikes, kept plenty of water on us and in the car, and had trail mix handy at all times."
+    ]
   },
   {
     "code": "pefo",
@@ -419,7 +536,13 @@ const PARKS_DATA = [
     "lushness_score": 0.135,
     "seasonality_score": 0.22,
     "water_score": 0.0,
-    "remote_score": 0.641
+    "remote_score": 0.641,
+    "family_score": 0.194,
+    "visitor_quotes": [
+      "the painted desert was really pretty!",
+      "Petrified Forest National Park is an underrated place filled with color.",
+      "Lucky to have some sunshine on the Blue Mesa Trail today since it was raining/snowing/hailing on and off all day."
+    ]
   },
   {
     "code": "gumo",
@@ -439,7 +562,12 @@ const PARKS_DATA = [
     "lushness_score": 0.024,
     "seasonality_score": 0.275,
     "water_score": 0.0,
-    "remote_score": 0.61
+    "remote_score": 0.61,
+    "family_score": 0.12,
+    "visitor_quotes": [
+      "Most of this hike follows a wash up into the mountains. The staircase is a bit of a challenge you can either climb up it or inch around the ledge near the top.",
+      "Extremely underrated park: Guadalupe Mountains"
+    ]
   },
   {
     "code": "bibe",
@@ -459,7 +587,13 @@ const PARKS_DATA = [
     "lushness_score": 0.041,
     "seasonality_score": 0.349,
     "water_score": 0.489,
-    "remote_score": 0.9
+    "remote_score": 0.9,
+    "family_score": 0.194,
+    "visitor_quotes": [
+      "Still daydreaming about this park from my cubicle.",
+      "The remoteness, calm and clarity of the night sky was magical about Big Bend.",
+      "Worth the long drive through the desert! Night sky was incredible…especially from our campsite along the Rio Grande."
+    ]
   },
   {
     "code": "ever",
@@ -479,7 +613,13 @@ const PARKS_DATA = [
     "lushness_score": 0.099,
     "seasonality_score": 0.163,
     "water_score": 0.905,
-    "remote_score": 0.381
+    "remote_score": 0.381,
+    "family_score": 0.412,
+    "visitor_quotes": [
+      "This park instantly shoots up into my top-5, maybe even top 3.",
+      "Wish I cared about National Parks at an earlier age. New convert.",
+      "I got to spend a bit more time exploring the further out parts of Everglades and Biscayne National Parks."
+    ]
   },
   {
     "code": "grsm",
@@ -499,7 +639,13 @@ const PARKS_DATA = [
     "lushness_score": 0.412,
     "seasonality_score": 0.171,
     "water_score": 0.489,
-    "remote_score": 0.313
+    "remote_score": 0.313,
+    "family_score": 0.339,
+    "visitor_quotes": [
+      "A little rainy but still an amazing visit.",
+      "More than 100 miles in Great Smoky Mountains NP (in June and October) - the most visited NPS.",
+      "Great Smoky Mountains, with fall foliage on full display."
+    ]
   },
   {
     "code": "shen",
@@ -519,7 +665,13 @@ const PARKS_DATA = [
     "lushness_score": 0.369,
     "seasonality_score": 0.434,
     "water_score": 0.245,
-    "remote_score": 0.542
+    "remote_score": 0.542,
+    "family_score": 0.145,
+    "visitor_quotes": [
+      "Still had fun but it was raining on me the entire time. Scrambling was pretty difficult with how wet it was but lowkey pretty fun.",
+      "Crazy what a difference 24h can make! Last three photos from the summit of Hawksbill on Sat, where it was 30 degrees and icing, and first few photos from an Old Rag on Sunday, clear and gorgeous.",
+      "Shenandoah on a cloudy day is beautiful"
+    ]
   },
   {
     "code": "acad",
@@ -539,7 +691,13 @@ const PARKS_DATA = [
     "lushness_score": 0.384,
     "seasonality_score": 0.512,
     "water_score": 0.905,
-    "remote_score": 0.818
+    "remote_score": 0.818,
+    "family_score": 0.117,
+    "visitor_quotes": [
+      "I highly recommend spending a night stargazing on the cliffs of Acadia. Nothing like it with the sound of the waves washing against the rocky cliffs, the buoy bell in the distance, and the stars shining brightly overhead.",
+      "I watched the last sunrise of 2025 from this spot above the water at Otter Cliff in Acadia. It was very, very cold this year and I was lucky this spot was free of ice.",
+      "We were in Maine seeing friends and decided on a side trip to Acadia. I had no idea what to expect, but it was utterly gorgeous."
+    ]
   },
   {
     "code": "voya",
@@ -559,7 +717,13 @@ const PARKS_DATA = [
     "lushness_score": 0.424,
     "seasonality_score": 0.539,
     "water_score": 0.956,
-    "remote_score": 0.882
+    "remote_score": 0.882,
+    "family_score": 0.669,
+    "visitor_quotes": [
+      "Being able to walk out on Lake Kabetogama was a surreal experience. It definitely was nerve wracking the first few steps but the anxiety quickly faded and turned into pure amazement.",
+      "Arrived late after a long drive but had time to do a little kayaking. So peaceful here, I can't wait to explore more of the islands/hiking trails.",
+      "Couldn't sleep, caught the sunrise."
+    ]
   },
   {
     "code": "badl",
@@ -579,7 +743,13 @@ const PARKS_DATA = [
     "lushness_score": 0.082,
     "seasonality_score": 0.594,
     "water_score": 0.0,
-    "remote_score": 0.405
+    "remote_score": 0.405,
+    "family_score": 0.194,
+    "visitor_quotes": [
+      "This was the first place where the terrain felt truly different.",
+      "Felt like a Martian landscape.",
+      "I was absolutely taken aback at the beauty!"
+    ]
   },
   {
     "code": "jotr",
@@ -599,7 +769,13 @@ const PARKS_DATA = [
     "lushness_score": 0.03,
     "seasonality_score": 0.201,
     "water_score": 0.0,
-    "remote_score": 0.646
+    "remote_score": 0.646,
+    "family_score": 0.096,
+    "visitor_quotes": [
+      "Joshua Tree is such a gem and the Cholla Cactus Garden for sunrise is one of my favorite places with the park.",
+      "Joshua Tree National Park. Truly, such an amazing and sacred place to visit.",
+      "The Sunsets in Joshua Tree are Amazing"
+    ]
   },
   {
     "code": "deva",
@@ -619,7 +795,13 @@ const PARKS_DATA = [
     "lushness_score": 0.038,
     "seasonality_score": 0.135,
     "water_score": 0.0,
-    "remote_score": 0.659
+    "remote_score": 0.659,
+    "family_score": 0.049,
+    "visitor_quotes": [
+      "It's definitely not known for being hospitable, but the views almost feel eerie with how cool they are. Something about it feeling so 'dead' makes it surreal to be there.",
+      "My first trip to Death Valley was amazing. Capturing the stars there was so much fun, can't wait to come back again!",
+      "So much more gorgeous than I could've imagined!"
+    ]
   },
   {
     "code": "grba",
@@ -639,7 +821,13 @@ const PARKS_DATA = [
     "lushness_score": 0.055,
     "seasonality_score": 0.397,
     "water_score": 0.245,
-    "remote_score": 0.79
+    "remote_score": 0.79,
+    "family_score": 0.553,
+    "visitor_quotes": [
+      "Underrated alpine sanctuary in the middle of the desert.",
+      "When we woke up the first morning it had snowed overnight and it genuinely made everything look like a winter wonderland from a Christmas song.",
+      "No crowds, no lines, no permits. Just amazing views, some caves, and the oldest living trees on the planet to keep you company."
+    ]
   },
   {
     "code": "thro",
@@ -659,7 +847,13 @@ const PARKS_DATA = [
     "lushness_score": 0.079,
     "seasonality_score": 0.533,
     "water_score": 0.0,
-    "remote_score": 0.693
+    "remote_score": 0.693,
+    "family_score": 0.0,
+    "visitor_quotes": [
+      "I feel like it's a very slept on National Park. Loved how remote it felt and thought some of the topographical features were as stunning as a lot of the more popular parks.",
+      "An excellent trip to a very underrated national park!",
+      "Pristine park of the prairie!"
+    ]
   },
   {
     "code": "blca",
@@ -679,7 +873,13 @@ const PARKS_DATA = [
     "lushness_score": 0.036,
     "seasonality_score": 0.302,
     "water_score": 0.489,
-    "remote_score": 0.454
+    "remote_score": 0.454,
+    "family_score": 0.0,
+    "visitor_quotes": [
+      "A small but beautiful park.",
+      "Such an incredibly underrated park.",
+      "Simply gorgeous!"
+    ]
   },
   {
     "code": "meve",
@@ -699,7 +899,13 @@ const PARKS_DATA = [
     "lushness_score": 0.045,
     "seasonality_score": 0.428,
     "water_score": 0.0,
-    "remote_score": 0.65
+    "remote_score": 0.65,
+    "family_score": 0.071,
+    "visitor_quotes": [
+      "Mesa Verde National Park wasn't even on my bucket list but after our visit, I am encouraging everyone to add it to theirs.",
+      "Mesa Verde wasn't really on my radar. My expectations were not high when we booked the trip, but we spent four days here and had a blast.",
+      "Really an amazing place. Surprised how much I liked it."
+    ]
   },
   {
     "code": "grsa",
@@ -719,7 +925,13 @@ const PARKS_DATA = [
     "lushness_score": 0.039,
     "seasonality_score": 0.443,
     "water_score": 0.734,
-    "remote_score": 0.57
+    "remote_score": 0.57,
+    "family_score": 0.241,
+    "visitor_quotes": [
+      "The snow added such a beautiful contrast. And what a workout it was!",
+      "Sunset conditions for climbing the dunes were incredible! Only take away: wear more mosquito repellent! They are ridiculous and vicious this year.",
+      "There are many great things about the USA, but few are greater than how you have preserved your natural treasures."
+    ]
   },
   {
     "code": "neri",
@@ -739,7 +951,13 @@ const PARKS_DATA = [
     "lushness_score": 0.672,
     "seasonality_score": 0.316,
     "water_score": 0.846,
-    "remote_score": 0.794
+    "remote_score": 0.794,
+    "family_score": 0.096,
+    "visitor_quotes": [
+      "The shots of the fog under the bridge at sunset are unforgettable.",
+      "Fresh, unexpected snow over night made it a magical seen with the fog this morning.",
+      "Hiking in the Gorge and the water activities are all amazing."
+    ]
   },
   {
     "code": "glba",
@@ -759,7 +977,13 @@ const PARKS_DATA = [
     "lushness_score": 0.315,
     "seasonality_score": 0.55,
     "water_score": 0.776,
-    "remote_score": 0.605
+    "remote_score": 0.605,
+    "family_score": 0.906,
+    "visitor_quotes": [
+      "Glacier Bay was incredible",
+      "Glacier Bay was truly the highlight of our Alaska cruise - this incredibly beautiful fjord",
+      "Finally made it on a cruise and it was beautiful"
+    ]
   },
   {
     "code": "havo",
@@ -779,7 +1003,11 @@ const PARKS_DATA = [
     "lushness_score": 0.082,
     "seasonality_score": 0.045,
     "water_score": 0.0,
-    "remote_score": 0.326
+    "remote_score": 0.326,
+    "family_score": 0.0,
+    "visitor_quotes": [
+      "Wife and I had the chance to visit Haleakalā and Hawaiʻi Volcanoes. Such amazing places ❤️"
+    ]
   },
   {
     "code": "hale",
@@ -799,7 +1027,13 @@ const PARKS_DATA = [
     "lushness_score": 0.052,
     "seasonality_score": 0.0,
     "water_score": 0.245,
-    "remote_score": 0.211
+    "remote_score": 0.211,
+    "family_score": 0.25,
+    "visitor_quotes": [
+      "The Haleakalā crater and its cinder cones are breathtaking. These images don't do the colors justice.",
+      "Getting up at 3 AM to leave our hotel in Kahului to snag one of the last parking spots at the top of the mountain to view the Haleakalā sunrise was spectacular.",
+      "Who knew Hawaii could look so otherworldly!"
+    ]
   },
   {
     "code": "glca",
@@ -819,7 +1053,13 @@ const PARKS_DATA = [
     "lushness_score": 0.062,
     "seasonality_score": 0.329,
     "water_score": 0.734,
-    "remote_score": 0.677
+    "remote_score": 0.677,
+    "family_score": 0.32,
+    "visitor_quotes": [
+      "This place is in the perfect place to be a hub for Grand Canyon, Zion, Bryce Canyon, Vegas, and more. And beautiful on its own.",
+      "After reading about Glen Canyon and seeing photos from all the places near Lake Powell, I'm much more excited.",
+      "It was a wonderful trip."
+    ]
   },
   {
     "code": "caco",
@@ -839,7 +1079,13 @@ const PARKS_DATA = [
     "lushness_score": 0.219,
     "seasonality_score": 0.412,
     "water_score": 0.813,
-    "remote_score": 0.476
+    "remote_score": 0.476,
+    "family_score": 0.453,
+    "visitor_quotes": [
+      "Just me, and about ten thousand fiddler crabs.",
+      "While there are no mountains in this part of the state the views are still beautiful. Beach with windswept sand dunes, salt marsh, and even some forest views.",
+      "Hiking deep in Cape Cod is a world like no other"
+    ]
   },
   {
     "code": "pore",
@@ -859,7 +1105,13 @@ const PARKS_DATA = [
     "lushness_score": 0.447,
     "seasonality_score": 0.097,
     "water_score": 0.489,
-    "remote_score": 0.292
+    "remote_score": 0.292,
+    "family_score": 0.184,
+    "visitor_quotes": [
+      "It was nice and sunny at the main VC, but by the time you got down to the beach, it was no longer beach weather.",
+      "Last time we were there (over ten years ago), the steps to the lighthouse were closed for safety reasons. This time we were able to walk the 309 steps down to the lighthouse and back up again.",
+      "Point Reyes is a treasure"
+    ]
   },
   {
     "code": "dino",
@@ -879,7 +1131,12 @@ const PARKS_DATA = [
     "lushness_score": 0.057,
     "seasonality_score": 0.486,
     "water_score": 0.687,
-    "remote_score": 0.629
+    "remote_score": 0.629,
+    "family_score": 0.529,
+    "visitor_quotes": [
+      "Hiked 5 miles each way to camp at this spectacular backcountry site at Ruple Point, overlooking the Green River. Didn't see another person in 2 days.",
+      "Dinosaur National Monument is a hidden gem!"
+    ]
   },
   {
     "code": "buff",
@@ -899,7 +1156,13 @@ const PARKS_DATA = [
     "lushness_score": 0.529,
     "seasonality_score": 0.46,
     "water_score": 0.734,
-    "remote_score": 0.612
+    "remote_score": 0.612,
+    "family_score": 0.096,
+    "visitor_quotes": [
+      "Hiking in the Gorge and the water activities are all amazing. The shots of the fog under the bridge at sunset are unforgettable.",
+      "One of our NEWEST national parks features one of the OLDEST rivers in the world. It was still beautiful and very interesting.",
+      "Gorgeous and diverse scenery and an amazing amount of undeveloped forest, plus some cool history of coal mining and mining towns."
+    ]
   },
   {
     "code": "crmo",
@@ -919,7 +1182,12 @@ const PARKS_DATA = [
     "lushness_score": 0.055,
     "seasonality_score": 0.434,
     "water_score": 0.0,
-    "remote_score": 0.717
+    "remote_score": 0.717,
+    "family_score": 0.0,
+    "visitor_quotes": [
+      "Simply an amazing place.",
+      "Craters of the Moon NM and Sunset Crater Volcano NM are some examples of places that I think would make great National Parks."
+    ]
   },
   {
     "code": "piro",
@@ -939,7 +1207,12 @@ const PARKS_DATA = [
     "lushness_score": 0.628,
     "seasonality_score": 0.612,
     "water_score": 0.979,
-    "remote_score": 0.896
+    "remote_score": 0.896,
+    "family_score": 1.0,
+    "visitor_quotes": [
+      "Extending for 42 miles along the shore of Lake Superior this lakeshore extends along the shore for 42 miles and covers 73,236 acres of Michigan's Upper Peninsula.",
+      "Colors in the cliffs of the varied rock"
+    ]
   },
   {
     "code": "slbe",
@@ -959,7 +1232,9 @@ const PARKS_DATA = [
     "lushness_score": 0.305,
     "seasonality_score": 0.777,
     "water_score": 0.632,
-    "remote_score": 0.761
+    "remote_score": 0.761,
+    "family_score": 0.0,
+    "visitor_quotes": []
   },
   {
     "code": "apis",
@@ -979,7 +1254,12 @@ const PARKS_DATA = [
     "lushness_score": 0.633,
     "seasonality_score": 0.634,
     "water_score": 0.931,
-    "remote_score": 0.803
+    "remote_score": 0.803,
+    "family_score": 0.0,
+    "visitor_quotes": [
+      "Backpacking/ kayaking the Apostle Islands and the sea caves has on my bucket list forever and finally did it! Definitely underrated because of how out there is it.",
+      "Had some overcast/ rainy days and some beautiful ones. Water was never too rough, lots of protection from the open Lake from the islands"
+    ]
   },
   {
     "code": "indu",
@@ -999,7 +1279,12 @@ const PARKS_DATA = [
     "lushness_score": 0.351,
     "seasonality_score": 0.422,
     "water_score": 0.734,
-    "remote_score": 0.296
+    "remote_score": 0.296,
+    "family_score": 0.459,
+    "visitor_quotes": [
+      "Hiked about 10 miles today. Most of the day it was 10 degrees but felt like -6! Beautiful national park - absolutely loved it!",
+      "I have a lot more appreciation for this park seeing it with a beautiful blanket of snow."
+    ]
   },
   {
     "code": "lavo",
@@ -1019,7 +1304,13 @@ const PARKS_DATA = [
     "lushness_score": 0.244,
     "seasonality_score": 0.602,
     "water_score": 0.813,
-    "remote_score": 0.704
+    "remote_score": 0.704,
+    "family_score": 0.268,
+    "visitor_quotes": [
+      "Like a mini-Yellowstone, but without the crowds!",
+      "It's a great hiking park and you can see a lot in a little time. I had about 2.5 days and it was perfect!",
+      "Stopped by Lassen National Park this summer on a whim. We loved it! Got to meet some park locals (deer and bugs), and swim in the lake."
+    ]
   },
   {
     "code": "chis",
@@ -1039,7 +1330,13 @@ const PARKS_DATA = [
     "lushness_score": 0.178,
     "seasonality_score": 0.174,
     "water_score": 1.0,
-    "remote_score": 0.61
+    "remote_score": 0.61,
+    "family_score": 0.173,
+    "visitor_quotes": [
+      "Great hiking, epic ocean kayaking to explore sea caves, and fantastic snorkeling around Scorpion Bay. Add in some cute island foxes and breaching humpback whales, and what's not to love?",
+      "Three hour ferry to an island that has 15 campsites. Once the day trippers leave, that's all the people on the island, plus a few rangers. Very peaceful.",
+      "This time of year seems to be a great time to visit: the sun was out and the island was green and blooming!"
+    ]
   },
   {
     "code": "kefj",
@@ -1059,7 +1356,12 @@ const PARKS_DATA = [
     "lushness_score": 0.054,
     "seasonality_score": 0.792,
     "water_score": 0.846,
-    "remote_score": 0.615
+    "remote_score": 0.615,
+    "family_score": 0.279,
+    "visitor_quotes": [
+      "For me, it was Harding Icefield in Kenai Fjords. I had heard many good things, but I didn't know I'd be transported to a whole different world! It was life changing!",
+      "Easily one of the most beautiful national parks in the US"
+    ]
   },
   {
     "code": "maca",
@@ -1079,7 +1381,13 @@ const PARKS_DATA = [
     "lushness_score": 0.339,
     "seasonality_score": 0.352,
     "water_score": 0.734,
-    "remote_score": 0.543
+    "remote_score": 0.543,
+    "family_score": 0.5,
+    "visitor_quotes": [
+      "The two hour tour went by very quickly, and the entrance to this tour was very dramatic.",
+      "The pictures don't do it justice. Well worth the money to tour the caves.",
+      "It is a 6.5 hour tour we took last weekend. The three park rangers are awesome and won't even take tips!"
+    ]
   },
   {
     "code": "isro",
@@ -1099,7 +1407,13 @@ const PARKS_DATA = [
     "lushness_score": 0.403,
     "seasonality_score": 0.839,
     "water_score": 0.905,
-    "remote_score": 0.94
+    "remote_score": 0.94,
+    "family_score": 0.169,
+    "visitor_quotes": [
+      "It's a remote and rugged national park experience. Rocky terrain, and almost total solitude.",
+      "Incredibly isolated island in Lake Superior, but well worth the time and effort to make the journey.",
+      "The ferry drop-off really makes it feel like you're leaving civilization behind. I didn't see another person for days."
+    ]
   },
   {
     "code": "viis",
@@ -1119,7 +1433,13 @@ const PARKS_DATA = [
     "lushness_score": 0.048,
     "seasonality_score": 0.127,
     "water_score": 0.905,
-    "remote_score": 0.031
+    "remote_score": 0.031,
+    "family_score": 0.151,
+    "visitor_quotes": [
+      "such a vividly vibrant place to start 2025!",
+      "The beaches? Next level. Cinnamon Bay was a personal favorite—quiet, stunning, and felt like paradise.",
+      "It's worth every $ to see this national treasure. Do the hikes, tour the ruins, sit on the beaches, do some snorkeling, eat the local food (and drink the rum)."
+    ]
   },
   {
     "code": "cuva",
@@ -1139,7 +1459,13 @@ const PARKS_DATA = [
     "lushness_score": 0.501,
     "seasonality_score": 0.19,
     "water_score": 0.568,
-    "remote_score": 0.623
+    "remote_score": 0.623,
+    "family_score": 0.072,
+    "visitor_quotes": [
+      "Enjoyed a great day at this small park this past week. I did short hikes at Brandywine Falls, the Ledges (my favorite part), and Beaver Marsh, and visited the Boston Mills Visitor Center.",
+      "To the people who say that Cuyahoga Valley National Park isn't worth it... it is just as nice if not better than Hocking Hills",
+      "This park was a pleasant surprise. Ledges Trail is a must!"
+    ]
   },
   {
     "code": "pinn",
@@ -1159,7 +1485,13 @@ const PARKS_DATA = [
     "lushness_score": 0.153,
     "seasonality_score": 0.114,
     "water_score": 0.0,
-    "remote_score": 0.521
+    "remote_score": 0.521,
+    "family_score": 0.101,
+    "visitor_quotes": [
+      "Caves, cliffs, and condors! Spent the beginning of the holiday weekend in California's newest National Park (Pinnacles NP)",
+      "Pinnacles is underrated — Underrated park within a short drive from the Bay Area. Yosemite and Sequoia / Kings Canyon get a lot more love (well earned) but Pinnacles is a quiet national park with some really unique hiking experiences.",
+      "A unique and surreal place with caves and towering monoliths."
+    ]
   },
   {
     "code": "cong",
@@ -1179,7 +1511,12 @@ const PARKS_DATA = [
     "lushness_score": 0.442,
     "seasonality_score": 0.143,
     "water_score": 0.687,
-    "remote_score": 0.621
+    "remote_score": 0.621,
+    "family_score": 0.191,
+    "visitor_quotes": [
+      "I didn't come in expecting it to be Zion, Glacier, Yellowstone, Grand Canyon, etc, but it was still a beautiful park in its own right.",
+      "Dreary day was the perfect setting for Congaree!"
+    ]
   },
   {
     "code": "wica",
@@ -1199,7 +1536,12 @@ const PARKS_DATA = [
     "lushness_score": 0.034,
     "seasonality_score": 0.483,
     "water_score": 0.0,
-    "remote_score": 0.329
+    "remote_score": 0.329,
+    "family_score": 0.611,
+    "visitor_quotes": [
+      "I came for the cave, stayed for the bison herd!",
+      "I ended up chilling in a pull off with these guys for 30 minutes and getting some amazing close ups from inside my car. I never thought they would get so close to the vehicle traffic!"
+    ]
   },
   {
     "code": "bisc",
@@ -1219,7 +1561,12 @@ const PARKS_DATA = [
     "lushness_score": 0.085,
     "seasonality_score": 0.063,
     "water_score": 0.931,
-    "remote_score": 0.143
+    "remote_score": 0.143,
+    "family_score": 0.976,
+    "visitor_quotes": [
+      "Full day at Biscayne NP, snorkeling and paddle boarding. Winter is shaping up nicely.",
+      "I was in South Florida over the weekend, and got to spend a bit more time exploring the further out parts of Everglades and Biscayne National Parks."
+    ]
   },
   {
     "code": "hosp",
@@ -1239,7 +1586,12 @@ const PARKS_DATA = [
     "lushness_score": 0.223,
     "seasonality_score": 0.163,
     "water_score": 0.245,
-    "remote_score": 0.402
+    "remote_score": 0.402,
+    "family_score": 0.387,
+    "visitor_quotes": [
+      "A new thermal vent spewing steam in the air at Yellowstone National Park is gaining attention, mainly because it's visible from a road rather than any significant change in the park famous for its thousands of geysers, hot springs and bubbling mud pots.",
+      "Started my National Parks journey this year... Hot Springs National Park"
+    ]
   },
   {
     "code": "kova",
@@ -1259,7 +1611,12 @@ const PARKS_DATA = [
     "lushness_score": 0.489,
     "seasonality_score": 0.155,
     "water_score": 0.632,
-    "remote_score": 1.0
+    "remote_score": 1.0,
+    "family_score": 0.0,
+    "visitor_quotes": [
+      "Distinctive dunes in the Arctic made this a remarkable experience!",
+      "The sand dunes of Kobuk Valley, one of the more remote US National Parks, in front of the mighty Koyukuk River and the Baird Mountains of the Brooks Range"
+    ]
   },
   {
     "code": "drto",
@@ -1279,7 +1636,13 @@ const PARKS_DATA = [
     "lushness_score": 0.0,
     "seasonality_score": 0.037,
     "water_score": 0.687,
-    "remote_score": 0.515
+    "remote_score": 0.515,
+    "family_score": 0.537,
+    "visitor_quotes": [
+      "Took the ferry and cruised through extremely choppy seas only for the clouds to part and the day turn quite beautiful as we arrived at Garden Key!",
+      "Didn't feel real. The history and wildlife and adventure of this park puts it in my top 5 for sure!",
+      "This park instantly shoots up into my top-5, maybe even top 3."
+    ]
   },
   {
     "code": "cave",
@@ -1299,7 +1662,12 @@ const PARKS_DATA = [
     "lushness_score": 0.034,
     "seasonality_score": 0.271,
     "water_score": 0.0,
-    "remote_score": 0.667
+    "remote_score": 0.667,
+    "family_score": 0.0,
+    "visitor_quotes": [
+      "Best way to escape the heat is to go as far underground as you can. Crazy to think Jim White just ... walked all the way down there. With a lantern. Absolute mad lad.",
+      "My photos don't do the caverns justice. You have to visit the park to be truly in awe of it."
+    ]
   },
   {
     "code": "whsa",
@@ -1319,7 +1687,13 @@ const PARKS_DATA = [
     "lushness_score": 0.008,
     "seasonality_score": 0.209,
     "water_score": 0.0,
-    "remote_score": 0.523
+    "remote_score": 0.523,
+    "family_score": 0.421,
+    "visitor_quotes": [
+      "The beauty exceeded expectations.",
+      "I love the way the blue layers of the dunes contrast with the orange ombré sky at sunset.",
+      "This place is magical!! The white dunes are beautiful with all the pastel colors of dawn and dusk."
+    ]
   },
   {
     "code": "wrst",
@@ -1339,7 +1713,13 @@ const PARKS_DATA = [
     "lushness_score": 0.458,
     "seasonality_score": 0.829,
     "water_score": 0.687,
-    "remote_score": 0.881
+    "remote_score": 0.881,
+    "family_score": 0.196,
+    "visitor_quotes": [
+      "Largest national park in the U.S. and well worth the 7 hour drive from Anchorage!",
+      "Double rainbow over a cabin in Wrangell-St. Elias",
+      "XC Ski on the Copper Lake Trail, off the Nabesna road."
+    ]
   },
   {
     "code": "lacl",
@@ -1359,7 +1739,9 @@ const PARKS_DATA = [
     "lushness_score": 0.204,
     "seasonality_score": 0.781,
     "water_score": 0.846,
-    "remote_score": 0.701
+    "remote_score": 0.701,
+    "family_score": 0.169,
+    "visitor_quotes": []
   },
   {
     "code": "gaar",
@@ -1379,6 +1761,11 @@ const PARKS_DATA = [
     "lushness_score": 0.382,
     "seasonality_score": 0.817,
     "water_score": 0.568,
-    "remote_score": 0.895
+    "remote_score": 0.895,
+    "family_score": 0.108,
+    "visitor_quotes": [
+      "The most majestic, rugged and untouched wilderness I've experienced.",
+      "I thought my first visit to the Gates of the Arctic NP was a once-in-a-lifetime trip, but I'm now planning a camping trip."
+    ]
   }
 ];

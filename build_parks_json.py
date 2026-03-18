@@ -12,8 +12,25 @@ import json
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from shared.config import PROCESSED_DIR
+from shared.config import PROCESSED_DIR, REDDIT_DIR
 import pandas as pd
+
+
+def load_visitor_quotes() -> dict:
+    """Load Claude-extracted visitor quotes from per-park quote files.
+    Returns dict mapping park_code → list of quote strings."""
+    quotes = {}
+    if not REDDIT_DIR.exists():
+        return quotes
+    for path in sorted(REDDIT_DIR.glob("*_quotes.json")):
+        try:
+            data = json.loads(path.read_text())
+            code = data.get("park_code", "")
+            if code:
+                quotes[code] = data.get("quotes", [])
+        except Exception:
+            pass
+    return quotes
 
 
 # ── Manual imputations for parks with missing dimension scores ─────────────
@@ -56,6 +73,7 @@ def get_score(row, col):
 def main():
     master   = pd.read_csv(PROCESSED_DIR / "parks_master.csv")
     features = pd.read_csv(PROCESSED_DIR / "parks_features.csv")
+    visitor_quotes = load_visitor_quotes()
 
     df = features.merge(
         master[["park_code", "lat", "lng", "url", "description",
@@ -65,8 +83,9 @@ def main():
 
     parks = []
     for _, row in df.iterrows():
+        code = row["park_code"]
         parks.append({
-            "code":             row["park_code"],
+            "code":             code,
             "name":             row["park_name"],
             "lat":              round(float(row["lat"]), 4),
             "lng":              round(float(row["lng"]), 4),
@@ -84,6 +103,8 @@ def main():
             "seasonality_score": get_score(row, "seasonality_score"),
             "water_score":      get_score(row, "water_score"),
             "remote_score":     get_score(row, "remote_score"),
+            "family_score":     get_score(row, "family_score"),
+            "visitor_quotes":   visitor_quotes.get(code, []),
         })
 
     out = Path(__file__).parent / "parks_data.js"

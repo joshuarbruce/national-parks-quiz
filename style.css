@@ -375,7 +375,7 @@ html, body {
 }
 
 /* ── Results ─────────────────────────────────────────────────────────────── */
-#results { min-height: 100vh; }
+#results { height: 100vh; overflow: hidden; }
 
 .results-topbar {
   display: flex;
@@ -404,10 +404,69 @@ html, body {
   margin-top: 1px;
 }
 
+.results-filter-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.45rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  flex-shrink: 0;
+}
+
+.rfilter-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-right: 0.25rem;
+}
+
+.rfilter-scope-btns {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.rscope-btn {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.rscope-btn:hover  { border-color: var(--accent); color: var(--text); }
+.rscope-btn.active { border-color: var(--accent); background: var(--accent-dim); color: var(--accent); }
+
+.res-location-panel {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-left: 0.5rem;
+}
+
+.btn-locate-sm {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  color: var(--text);
+  cursor: pointer;
+}
+.btn-locate-sm.success { border-color: #34d399; color: #34d399; }
+.btn-locate-sm.error   { border-color: #f87171; }
+
+.zip-input-sm { width: 4.5rem; font-size: 0.75rem; padding: 0.2rem 0.4rem; }
+
 .results-body {
   display: flex;
   flex: 1;
-  height: calc(100vh - var(--topbar-h));
+  min-height: 0;
   overflow: hidden;
 }
 
@@ -508,6 +567,20 @@ html, body {
 }
 
 .card-why p::before { content: "· "; color: var(--accent); font-weight: 700; }
+
+.card-quotes {
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.5rem;
+}
+
+.visitor-quote {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
 
 /* ── Profile bars ────────────────────────────────────────────────────────── */
 .profile-box {

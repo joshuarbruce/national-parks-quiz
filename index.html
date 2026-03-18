@@ -15,7 +15,7 @@
       <div class="welcome-icon">⛰</div>
       <h1>Which National Park<br>Are You?</h1>
       <p class="welcome-sub">
-        15 questions. 69 parks. Find your perfect match.
+        16 questions. 69 parks. Find your perfect match.
       </p>
       <button id="start-btn" class="btn-primary">Start the Quiz →</button>
       <p class="welcome-note">Runs entirely in your browser. No data collected.</p>
@@ -63,7 +63,7 @@
       <div class="progress-track">
         <div id="progress-fill" class="progress-fill"></div>
       </div>
-      <span id="progress-label" class="progress-label">1 of 15</span>
+      <span id="progress-label" class="progress-label">1 of 16</span>
     </div>
     <div class="quiz-body">
       <div class="question-wrap">
@@ -83,6 +83,28 @@
       </div>
       <button id="retake-btn" class="btn-ghost">↩ Retake Quiz</button>
     </div>
+
+    <div class="results-filter-bar">
+      <span class="rfilter-label">Geographic Filter:</span>
+      <div class="rfilter-scope-btns">
+        <button class="rscope-btn active" data-scope="any">Anywhere in the US</button>
+        <button class="rscope-btn" data-scope="lower48">Lower 48 states</button>
+        <button class="rscope-btn" data-scope="distance">Based on my Location</button>
+      </div>
+      <div id="res-location-panel" class="res-location-panel" style="display:none">
+        <button id="res-geolocate-btn" class="btn-locate-sm">📍 My location</button>
+        <span class="loc-or">or</span>
+        <input id="res-zip-input" class="zip-input zip-input-sm" type="text" inputmode="numeric" placeholder="ZIP" maxlength="5">
+        <button id="res-zip-btn" class="btn-zip">→</button>
+        <div id="res-distance-options" class="distance-options" style="display:none">
+          <button class="res-dist-btn" data-miles="500">500 mi</button>
+          <button class="res-dist-btn" data-miles="1000">1,000 mi</button>
+          <button class="res-dist-btn" data-miles="1500">1,500 mi</button>
+        </div>
+        <p id="res-location-status" class="location-status"></p>
+      </div>
+    </div>
+
     <div class="results-body">
 
       <aside class="sidebar">

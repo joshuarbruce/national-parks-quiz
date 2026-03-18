@@ -3,7 +3,7 @@
 const DIMENSIONS = [
   "crowd_score", "challenge_score", "roughing_it_score",
   "wildlife_score", "lushness_score", "seasonality_score",
-  "water_score", "remote_score",
+  "water_score", "remote_score", "family_score",
 ];
 
 const DIM_LABELS = {
@@ -15,6 +15,7 @@ const DIM_LABELS = {
   seasonality_score: "Peak-season park",
   water_score:       "Water access",
   remote_score:      "Remoteness",
+  family_score:      "Family-friendliness",
 };
 
 const RANK_COLORS = ["#f5a623", "#60a5fa", "#34d399", "#c084fc", "#fb923c"];
@@ -183,6 +184,27 @@ const QUESTIONS = [
       [1.00, "Fly-in or end-of-road access only — I want where the roads stop"],
     ],
   },
+  // ── Family-friendliness ────────────────────────────────────────────────
+  {
+    id: "family_1", dimension: "family_score",
+    text: "Who are you visiting with?",
+    answers: [
+      [0.00, "Solo or with adults — kid-friendliness isn't a factor"],
+      [0.33, "A small group of adults who want flexibility"],
+      [0.67, "Mixed ages — some people need easier access and rest stops"],
+      [1.00, "Young children in tow — accessible trails and visitor centers matter"],
+    ],
+  },
+  {
+    id: "family_2", dimension: "family_score",
+    text: "A park trip success looks like:",
+    answers: [
+      [0.00, "I pushed my limits and earned every mile"],
+      [0.33, "Good balance of effort and downtime"],
+      [0.67, "Everyone in the group had a great time, regardless of fitness level"],
+      [1.00, "The kids were amazed and want to come back"],
+    ],
+  },
 ];
 
 // ── Quiz engine ───────────────────────────────────────────────────────────
@@ -284,6 +306,11 @@ function dimReason(dim, val) {
       "Easily accessible — near a major city or right off a highway",
       "A solid drive out — far enough to feel away from it all",
       "Genuinely remote — hours on back roads, limited services, real wilderness",
+    ],
+    family_score: [
+      "Appeals to adventurers and serious hikers — not a destination built around kids",
+      "Accessible to most visitors — a good general-purpose park",
+      "Family favorite — kid-friendly trails, visitor centers, and accessible features",
     ],
   };
   const idx = val < 0.35 ? 0 : val < 0.65 ? 1 : 2;
@@ -448,16 +475,23 @@ function handleAnswer(val) {
   }, 180);
 }
 
-function finishQuiz() {
-  document.getElementById("progress-fill").style.width = "100%";
+function refreshResults() {
+  filteredParks = computeFilteredParks();
   const userScores = scoreAnswers(rawAnswers);
   const matches    = matchParks(userScores, filteredParks);
-
   renderResults(matches, userScores);
-  showScreen("results");
-
-  // Init map after screen is visible (Leaflet needs rendered dimensions)
   requestAnimationFrame(() => initMap(matches));
+
+  // Sync filter bar active state
+  document.querySelectorAll(".rscope-btn").forEach(b => {
+    b.classList.toggle("active", b.dataset.scope === filterScope);
+  });
+}
+
+function finishQuiz() {
+  document.getElementById("progress-fill").style.width = "100%";
+  showScreen("results");
+  refreshResults();
 }
 
 // ── Results UI ────────────────────────────────────────────────────────────
@@ -479,6 +513,10 @@ function renderCards(matches) {
     card.className    = "match-card";
     card.dataset.code = m.park.code;
 
+    const quotesHtml = (m.park.visitor_quotes && m.park.visitor_quotes.length)
+      ? `<div class="card-quotes">${m.park.visitor_quotes.map(q => `<p class="visitor-quote">💬 "${q}"</p>`).join("")}</div>`
+      : "";
+
     card.innerHTML = `
       <div class="card-header">
         <div class="rank-badge" style="background:${m.color}">${m.rank}</div>
@@ -496,6 +534,7 @@ function renderCards(matches) {
       <div class="card-why">
         ${m.why.map(w => `<p>${w}</p>`).join("")}
       </div>
+      ${quotesHtml}
     `;
 
     card.addEventListener("click", () => focusPark(m.park.code));
@@ -624,7 +663,7 @@ function focusPark(code) {
   const latlng = marker.getLatLng
     ? marker.getLatLng()
     : L.latLng(marker._latlng);
-  leafletMap.setView(latlng, 8, { animate: true });
+  leafletMap.flyTo(latlng, 7, { animate: true, duration: 0.6 });
   marker.openPopup();
 }
 
@@ -727,4 +766,71 @@ document.getElementById("back-btn").addEventListener("click", goBack);
 document.getElementById("retake-btn").addEventListener("click", () => {
   if (leafletMap) { leafletMap.remove(); leafletMap = null; }
   showScreen("filter");
+});
+
+// ── Results filter bar ────────────────────────────────────────────────────
+
+// Scope toggle buttons
+document.querySelectorAll(".rscope-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    filterScope = btn.dataset.scope;
+    document.querySelectorAll(".rscope-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    const panel = document.getElementById("res-location-panel");
+    panel.style.display = filterScope === "distance" ? "flex" : "none";
+    if (filterScope !== "distance") refreshResults();
+  });
+});
+
+// Geolocation
+document.getElementById("res-geolocate-btn").addEventListener("click", () => {
+  const btn = document.getElementById("res-geolocate-btn");
+  btn.textContent = "📍 Locating…"; btn.disabled = true;
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      userLat = pos.coords.latitude; userLng = pos.coords.longitude;
+      btn.textContent = "📍 Location found"; btn.classList.add("success");
+      document.getElementById("res-distance-options").style.display = "flex";
+    },
+    () => {
+      btn.textContent = "📍 My location"; btn.disabled = false; btn.classList.add("error");
+      document.getElementById("res-location-status").textContent =
+        "Location unavailable — enter ZIP code instead.";
+    },
+    { timeout: 10000, enableHighAccuracy: false }
+  );
+});
+
+// ZIP lookup
+async function handleResZipLookup() {
+  const zip    = document.getElementById("res-zip-input").value.trim();
+  const status = document.getElementById("res-location-status");
+  if (!/^\d{5}$/.test(zip)) {
+    status.textContent = "Please enter a 5-digit ZIP code."; return;
+  }
+  status.textContent = "Looking up…";
+  const btn = document.getElementById("res-zip-btn"); btn.disabled = true;
+  try {
+    const { lat, lng } = await lookupZip(zip);
+    userLat = lat; userLng = lng;
+    status.textContent = `ZIP ${zip} found`;
+    document.getElementById("res-distance-options").style.display = "flex";
+  } catch(e) {
+    status.textContent = e.message;
+  }
+  btn.disabled = false;
+}
+document.getElementById("res-zip-btn").addEventListener("click", handleResZipLookup);
+document.getElementById("res-zip-input").addEventListener("keydown", e => {
+  if (e.key === "Enter") handleResZipLookup();
+});
+
+// Distance buttons
+document.querySelectorAll(".res-dist-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".res-dist-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    maxDistanceMi = parseInt(btn.dataset.miles);
+    if (userLat !== null) refreshResults();
+  });
 });
