@@ -18,7 +18,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.985,
     "lushness_score": 0.061,
     "seasonality_score": 0.544,
-    "water_score": 0.877
+    "water_score": 0.877,
+    "remote_score": 0.503
   },
   {
     "code": "yose",
@@ -37,7 +38,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.403,
     "lushness_score": 0.169,
     "seasonality_score": 0.267,
-    "water_score": 0.489
+    "water_score": 0.489,
+    "remote_score": 0.555
   },
   {
     "code": "grca",
@@ -56,7 +58,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.539,
     "lushness_score": 0.067,
     "seasonality_score": 0.155,
-    "water_score": 0.489
+    "water_score": 0.489,
+    "remote_score": 0.511
   },
   {
     "code": "zion",
@@ -75,7 +78,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.259,
     "lushness_score": 0.084,
     "seasonality_score": 0.155,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.722
   },
   {
     "code": "brca",
@@ -94,7 +98,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.536,
     "lushness_score": 0.014,
     "seasonality_score": 0.275,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.757
   },
   {
     "code": "arch",
@@ -113,7 +118,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.187,
     "lushness_score": 0.064,
     "seasonality_score": 0.174,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.0
   },
   {
     "code": "care",
@@ -132,7 +138,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.141,
     "lushness_score": 0.058,
     "seasonality_score": 0.285,
-    "water_score": 0.245
+    "water_score": 0.245,
+    "remote_score": 0.604
   },
   {
     "code": "cany",
@@ -151,7 +158,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.084,
     "lushness_score": 0.046,
     "seasonality_score": 0.239,
-    "water_score": 0.568
+    "water_score": 0.568,
+    "remote_score": 0.295
   },
   {
     "code": "romo",
@@ -170,7 +178,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.491,
     "lushness_score": 0.093,
     "seasonality_score": 0.457,
-    "water_score": 0.245
+    "water_score": 0.245,
+    "remote_score": 0.453
   },
   {
     "code": "olym",
@@ -189,7 +198,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.138,
     "lushness_score": 0.529,
     "seasonality_score": 0.531,
-    "water_score": 0.877
+    "water_score": 0.877,
+    "remote_score": 0.479
   },
   {
     "code": "noca",
@@ -208,7 +218,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.154,
     "lushness_score": 0.355,
     "seasonality_score": 0.779,
-    "water_score": 0.687
+    "water_score": 0.687,
+    "remote_score": 0.604
   },
   {
     "code": "mora",
@@ -227,7 +238,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.195,
     "lushness_score": 0.308,
     "seasonality_score": 0.607,
-    "water_score": 0.388
+    "water_score": 0.388,
+    "remote_score": 0.469
   },
   {
     "code": "crla",
@@ -246,7 +258,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.202,
     "lushness_score": 0.214,
     "seasonality_score": 0.705,
-    "water_score": 0.632
+    "water_score": 0.632,
+    "remote_score": 0.601
   },
   {
     "code": "redw",
@@ -265,7 +278,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.091,
     "lushness_score": 1.0,
     "seasonality_score": 0.271,
-    "water_score": 0.813
+    "water_score": 0.813,
+    "remote_score": 0.86
   },
   {
     "code": "seki",
@@ -284,7 +298,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.221,
     "lushness_score": 0.204,
     "seasonality_score": 0.381,
-    "water_score": 0.489
+    "water_score": 0.489,
+    "remote_score": 0.52
   },
   {
     "code": "glac",
@@ -303,7 +318,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.384,
     "lushness_score": 0.15,
     "seasonality_score": 0.686,
-    "water_score": 0.846
+    "water_score": 0.846,
+    "remote_score": 0.701
   },
   {
     "code": "grte",
@@ -322,7 +338,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.584,
     "lushness_score": 0.07,
     "seasonality_score": 0.531,
-    "water_score": 0.956
+    "water_score": 0.956,
+    "remote_score": 0.185
   },
   {
     "code": "dena",
@@ -341,7 +358,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.688,
     "lushness_score": 0.159,
     "seasonality_score": 0.693,
-    "water_score": 0.245
+    "water_score": 0.245,
+    "remote_score": 0.708
   },
   {
     "code": "katm",
@@ -360,7 +378,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.81,
     "lushness_score": 0.132,
     "seasonality_score": 1.0,
-    "water_score": 0.632
+    "water_score": 0.632,
+    "remote_score": 0.899
   },
   {
     "code": "sagu",
@@ -379,7 +398,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.392,
     "lushness_score": 0.084,
     "seasonality_score": 0.309,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.025
   },
   {
     "code": "pefo",
@@ -398,7 +418,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.576,
     "lushness_score": 0.135,
     "seasonality_score": 0.22,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.641
   },
   {
     "code": "gumo",
@@ -417,7 +438,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.27,
     "lushness_score": 0.024,
     "seasonality_score": 0.275,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.61
   },
   {
     "code": "bibe",
@@ -436,7 +458,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.287,
     "lushness_score": 0.041,
     "seasonality_score": 0.349,
-    "water_score": 0.489
+    "water_score": 0.489,
+    "remote_score": 0.9
   },
   {
     "code": "ever",
@@ -455,7 +478,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.352,
     "lushness_score": 0.099,
     "seasonality_score": 0.163,
-    "water_score": 0.905
+    "water_score": 0.905,
+    "remote_score": 0.381
   },
   {
     "code": "grsm",
@@ -474,7 +498,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.152,
     "lushness_score": 0.412,
     "seasonality_score": 0.171,
-    "water_score": 0.489
+    "water_score": 0.489,
+    "remote_score": 0.313
   },
   {
     "code": "shen",
@@ -493,7 +518,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.067,
     "lushness_score": 0.369,
     "seasonality_score": 0.434,
-    "water_score": 0.245
+    "water_score": 0.245,
+    "remote_score": 0.542
   },
   {
     "code": "acad",
@@ -512,7 +538,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.171,
     "lushness_score": 0.384,
     "seasonality_score": 0.512,
-    "water_score": 0.905
+    "water_score": 0.905,
+    "remote_score": 0.818
   },
   {
     "code": "voya",
@@ -531,7 +558,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.119,
     "lushness_score": 0.424,
     "seasonality_score": 0.539,
-    "water_score": 0.956
+    "water_score": 0.956,
+    "remote_score": 0.882
   },
   {
     "code": "badl",
@@ -550,7 +578,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.79,
     "lushness_score": 0.082,
     "seasonality_score": 0.594,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.405
   },
   {
     "code": "jotr",
@@ -569,7 +598,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.062,
     "lushness_score": 0.03,
     "seasonality_score": 0.201,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.646
   },
   {
     "code": "deva",
@@ -588,7 +618,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.072,
     "lushness_score": 0.038,
     "seasonality_score": 0.135,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.659
   },
   {
     "code": "grba",
@@ -607,7 +638,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.271,
     "lushness_score": 0.055,
     "seasonality_score": 0.397,
-    "water_score": 0.245
+    "water_score": 0.245,
+    "remote_score": 0.79
   },
   {
     "code": "thro",
@@ -626,7 +658,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.455,
     "lushness_score": 0.079,
     "seasonality_score": 0.533,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.693
   },
   {
     "code": "blca",
@@ -645,7 +678,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.317,
     "lushness_score": 0.036,
     "seasonality_score": 0.302,
-    "water_score": 0.489
+    "water_score": 0.489,
+    "remote_score": 0.454
   },
   {
     "code": "meve",
@@ -664,7 +698,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.309,
     "lushness_score": 0.045,
     "seasonality_score": 0.428,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.65
   },
   {
     "code": "grsa",
@@ -683,7 +718,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.203,
     "lushness_score": 0.039,
     "seasonality_score": 0.443,
-    "water_score": 0.734
+    "water_score": 0.734,
+    "remote_score": 0.57
   },
   {
     "code": "neri",
@@ -702,7 +738,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.057,
     "lushness_score": 0.672,
     "seasonality_score": 0.316,
-    "water_score": 0.846
+    "water_score": 0.846,
+    "remote_score": 0.794
   },
   {
     "code": "glba",
@@ -721,7 +758,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.61,
     "lushness_score": 0.315,
     "seasonality_score": 0.55,
-    "water_score": 0.776
+    "water_score": 0.776,
+    "remote_score": 0.605
   },
   {
     "code": "havo",
@@ -740,7 +778,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.077,
     "lushness_score": 0.082,
     "seasonality_score": 0.045,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.326
   },
   {
     "code": "hale",
@@ -759,7 +798,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.227,
     "lushness_score": 0.052,
     "seasonality_score": 0.0,
-    "water_score": 0.245
+    "water_score": 0.245,
+    "remote_score": 0.211
   },
   {
     "code": "glca",
@@ -778,7 +818,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.25,
     "lushness_score": 0.062,
     "seasonality_score": 0.329,
-    "water_score": 0.734
+    "water_score": 0.734,
+    "remote_score": 0.677
   },
   {
     "code": "caco",
@@ -797,7 +838,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.537,
     "lushness_score": 0.219,
     "seasonality_score": 0.412,
-    "water_score": 0.813
+    "water_score": 0.813,
+    "remote_score": 0.476
   },
   {
     "code": "pore",
@@ -816,7 +858,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.334,
     "lushness_score": 0.447,
     "seasonality_score": 0.097,
-    "water_score": 0.489
+    "water_score": 0.489,
+    "remote_score": 0.292
   },
   {
     "code": "dino",
@@ -835,7 +878,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.244,
     "lushness_score": 0.057,
     "seasonality_score": 0.486,
-    "water_score": 0.687
+    "water_score": 0.687,
+    "remote_score": 0.629
   },
   {
     "code": "buff",
@@ -854,7 +898,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.027,
     "lushness_score": 0.529,
     "seasonality_score": 0.46,
-    "water_score": 0.734
+    "water_score": 0.734,
+    "remote_score": 0.612
   },
   {
     "code": "crmo",
@@ -873,7 +918,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.16,
     "lushness_score": 0.055,
     "seasonality_score": 0.434,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.717
   },
   {
     "code": "piro",
@@ -892,7 +938,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.047,
     "lushness_score": 0.628,
     "seasonality_score": 0.612,
-    "water_score": 0.979
+    "water_score": 0.979,
+    "remote_score": 0.896
   },
   {
     "code": "slbe",
@@ -911,7 +958,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.091,
     "lushness_score": 0.305,
     "seasonality_score": 0.777,
-    "water_score": 0.632
+    "water_score": 0.632,
+    "remote_score": 0.761
   },
   {
     "code": "apis",
@@ -930,7 +978,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.0,
     "lushness_score": 0.633,
     "seasonality_score": 0.634,
-    "water_score": 0.931
+    "water_score": 0.931,
+    "remote_score": 0.803
   },
   {
     "code": "indu",
@@ -949,7 +998,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.176,
     "lushness_score": 0.351,
     "seasonality_score": 0.422,
-    "water_score": 0.734
+    "water_score": 0.734,
+    "remote_score": 0.296
   },
   {
     "code": "lavo",
@@ -968,7 +1018,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.21,
     "lushness_score": 0.244,
     "seasonality_score": 0.602,
-    "water_score": 0.813
+    "water_score": 0.813,
+    "remote_score": 0.704
   },
   {
     "code": "chis",
@@ -987,7 +1038,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.258,
     "lushness_score": 0.178,
     "seasonality_score": 0.174,
-    "water_score": 1.0
+    "water_score": 1.0,
+    "remote_score": 0.61
   },
   {
     "code": "kefj",
@@ -1006,7 +1058,8 @@ const PARKS_DATA = [
     "wildlife_score": 1.0,
     "lushness_score": 0.054,
     "seasonality_score": 0.792,
-    "water_score": 0.846
+    "water_score": 0.846,
+    "remote_score": 0.615
   },
   {
     "code": "maca",
@@ -1025,7 +1078,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.03,
     "lushness_score": 0.339,
     "seasonality_score": 0.352,
-    "water_score": 0.734
+    "water_score": 0.734,
+    "remote_score": 0.543
   },
   {
     "code": "isro",
@@ -1044,7 +1098,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.444,
     "lushness_score": 0.403,
     "seasonality_score": 0.839,
-    "water_score": 0.905
+    "water_score": 0.905,
+    "remote_score": 0.94
   },
   {
     "code": "viis",
@@ -1063,7 +1118,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.085,
     "lushness_score": 0.048,
     "seasonality_score": 0.127,
-    "water_score": 0.905
+    "water_score": 0.905,
+    "remote_score": 0.031
   },
   {
     "code": "cuva",
@@ -1082,7 +1138,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.322,
     "lushness_score": 0.501,
     "seasonality_score": 0.19,
-    "water_score": 0.568
+    "water_score": 0.568,
+    "remote_score": 0.623
   },
   {
     "code": "pinn",
@@ -1101,7 +1158,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.314,
     "lushness_score": 0.153,
     "seasonality_score": 0.114,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.521
   },
   {
     "code": "cong",
@@ -1120,7 +1178,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.223,
     "lushness_score": 0.442,
     "seasonality_score": 0.143,
-    "water_score": 0.687
+    "water_score": 0.687,
+    "remote_score": 0.621
   },
   {
     "code": "wica",
@@ -1139,7 +1198,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.669,
     "lushness_score": 0.034,
     "seasonality_score": 0.483,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.329
   },
   {
     "code": "bisc",
@@ -1158,7 +1218,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.349,
     "lushness_score": 0.085,
     "seasonality_score": 0.063,
-    "water_score": 0.931
+    "water_score": 0.931,
+    "remote_score": 0.143
   },
   {
     "code": "hosp",
@@ -1177,7 +1238,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.075,
     "lushness_score": 0.223,
     "seasonality_score": 0.163,
-    "water_score": 0.245
+    "water_score": 0.245,
+    "remote_score": 0.402
   },
   {
     "code": "kova",
@@ -1196,7 +1258,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.417,
     "lushness_score": 0.489,
     "seasonality_score": 0.155,
-    "water_score": 0.632
+    "water_score": 0.632,
+    "remote_score": 1.0
   },
   {
     "code": "drto",
@@ -1215,7 +1278,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.727,
     "lushness_score": 0.0,
     "seasonality_score": 0.037,
-    "water_score": 0.687
+    "water_score": 0.687,
+    "remote_score": 0.515
   },
   {
     "code": "cave",
@@ -1234,7 +1298,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.28,
     "lushness_score": 0.034,
     "seasonality_score": 0.271,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.667
   },
   {
     "code": "whsa",
@@ -1253,7 +1318,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.338,
     "lushness_score": 0.008,
     "seasonality_score": 0.209,
-    "water_score": 0.0
+    "water_score": 0.0,
+    "remote_score": 0.523
   },
   {
     "code": "wrst",
@@ -1272,7 +1338,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.138,
     "lushness_score": 0.458,
     "seasonality_score": 0.829,
-    "water_score": 0.687
+    "water_score": 0.687,
+    "remote_score": 0.881
   },
   {
     "code": "lacl",
@@ -1291,7 +1358,8 @@ const PARKS_DATA = [
     "wildlife_score": 0.506,
     "lushness_score": 0.204,
     "seasonality_score": 0.781,
-    "water_score": 0.846
+    "water_score": 0.846,
+    "remote_score": 0.701
   },
   {
     "code": "gaar",
@@ -1310,6 +1378,7 @@ const PARKS_DATA = [
     "wildlife_score": 0.354,
     "lushness_score": 0.382,
     "seasonality_score": 0.817,
-    "water_score": 0.568
+    "water_score": 0.568,
+    "remote_score": 0.895
   }
 ];

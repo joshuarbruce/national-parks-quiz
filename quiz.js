@@ -2,7 +2,8 @@
 
 const DIMENSIONS = [
   "crowd_score", "challenge_score", "roughing_it_score",
-  "wildlife_score", "lushness_score", "seasonality_score", "water_score",
+  "wildlife_score", "lushness_score", "seasonality_score",
+  "water_score", "remote_score",
 ];
 
 const DIM_LABELS = {
@@ -13,6 +14,7 @@ const DIM_LABELS = {
   lushness_score:    "Lush ecosystem",
   seasonality_score: "Peak-season park",
   water_score:       "Water access",
+  remote_score:      "Remoteness",
 };
 
 const RANK_COLORS = ["#f5a623", "#60a5fa", "#34d399", "#c084fc", "#fb923c"];
@@ -99,12 +101,12 @@ const QUESTIONS = [
   },
   {
     id: "wildlife_2", dimension: "wildlife_score",
-    text: "You'd extend your trip by a day for:",
+    text: "Your wildlife style:",
     answers: [
-      [0.00, "One more dramatic viewpoint I nearly skipped"],
-      [0.33, "A waterfall tucked off the main trail"],
-      [0.67, "A reliable spot to see a specific animal"],
-      [1.00, "Bears actively fishing at a salmon run"],
+      [0.00, "I notice what wanders past — I don't plan around it"],
+      [0.33, "I'd take a short detour for a known bird blind or active meadow"],
+      [0.67, "I research which parks have my target species before I book"],
+      [1.00, "I'll wake at 4am and wait in position for predators or megafauna"],
     ],
   },
   // ── Lushness ───────────────────────────────────────────────────────────
@@ -162,12 +164,23 @@ const QUESTIONS = [
   },
   {
     id: "water_2", dimension: "water_score",
-    text: "Your ideal park setting:",
+    text: "When a park has water — lake, river, or coastline — you:",
     answers: [
-      [0.00, "High and dry — peaks, canyons, or open desert"],
-      [0.33, "Forested with streams and waterfalls, but hiking is the focus"],
-      [0.67, "Lakeside or river valley where water is always nearby"],
-      [1.00, "Coastal, island, or open bay — water as far as I can see"],
+      [0.00, "Enjoy it from shore — great backdrop, no interest in getting wet"],
+      [0.33, "Might fish or take a quick swim if it's right there"],
+      [0.67, "Plan around it — paddling, fishing, or swimming is part of the trip"],
+      [1.00, "The water IS the trip — kayaking, snorkeling, or boating is why I'm here"],
+    ],
+  },
+  // ── Remoteness ─────────────────────────────────────────────────────────
+  {
+    id: "remote_1", dimension: "remote_score",
+    text: "How far from civilization are you comfortable being?",
+    answers: [
+      [0.00, "Interstate access — ideally a short drive from a major city"],
+      [0.33, "A few hours on paved roads; I'll pass through small towns on the way"],
+      [0.67, "Hours on a back road with no cell service — part of the appeal"],
+      [1.00, "Fly-in or end-of-road access only — I want where the roads stop"],
     ],
   },
 ];
@@ -266,6 +279,11 @@ function dimReason(dim, val) {
       "Landscape-focused — the drama here is on land, not water",
       "Some water access — lakes or rivers for fishing and paddling",
       "Water-centric — kayaking, snorkeling, or boating are the main draws",
+    ],
+    remote_score: [
+      "Easily accessible — near a major city or right off a highway",
+      "A solid drive out — far enough to feel away from it all",
+      "Genuinely remote — hours on back roads, limited services, real wilderness",
     ],
   };
   const idx = val < 0.35 ? 0 : val < 0.65 ? 1 : 2;

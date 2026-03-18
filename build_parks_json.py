@@ -49,6 +49,7 @@ def main():
             "lushness_score":    round(float(row["lushness_score"]),    3),
             "seasonality_score": round(float(row["seasonality_score"]), 3),
             "water_score":       round(float(row["water_score"]),       3),
+            "remote_score":      round(float(row["remote_score"]),      3),
         })
 
     out = Path(__file__).parent / "parks_data.js"

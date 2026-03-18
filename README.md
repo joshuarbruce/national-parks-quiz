@@ -1,6 +1,6 @@
 # Which National Park Are You?
 
-A personality quiz that matches you to one of 69 major US national parks based on your travel preferences. Answer 14 questions about crowds, trail difficulty, camping style, wildlife, landscape, seasonality, and water access — and get a ranked list of your top 5 parks with an interactive map.
+A personality quiz that matches you to one of 69 major US national parks based on your travel preferences. Answer 15 questions about crowds, trail difficulty, camping style, wildlife, landscape, seasonality, water access, and remoteness — and get a ranked list of your top 5 parks with an interactive map.
 
 **Live at:** https://joshuarbruce.com/national-parks-quiz/
 
@@ -14,7 +14,7 @@ This is a personal project built for fun. It is not affiliated with, endorsed by
 
 ## How it works
 
-The quiz measures seven dimensions of park preference:
+The quiz measures eight dimensions of park preference:
 
 | Dimension | What it captures |
 |-----------|-----------------|
@@ -25,6 +25,7 @@ The quiz measures seven dimensions of park preference:
 | Lush ecosystem | Moisture-dependent species (fungi, amphibians) as a proxy for green vs. arid |
 | Peak-season park | How concentrated visitation is around summer |
 | Water access | Count of water-based activities (kayaking, snorkeling, fishing, boating, etc.) |
+| Remoteness | Straight-line distance from park centroid to nearest major city |
 
 Your answers are scored on each dimension and matched against park profiles using weighted Euclidean distance. Parks that align most closely with your stated preferences rank highest.
 
