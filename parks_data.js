@@ -22,9 +22,9 @@ const PARKS_DATA = [
     "remote_score": 0.503,
     "family_score": 0.0,
     "visitor_quotes": [
-      "Wild places settle into my soul with a deep sense of contentment and joy.",
-      "Pictures really can never do it justice",
-      "The abundance of wildlife truly blew me away!!"
+      "I captured these images on my first visit to Yellowstone. The abundance of wildlife truly blew me away!!",
+      "Grand Canyon of Yellowstone from Artist Point — Shot on iPhone 13 Pro.",
+      "In Yellowstone National Park, Andy Coleman captured this American bison cloaked in ice and snow"
     ]
   },
   {
@@ -48,8 +48,9 @@ const PARKS_DATA = [
     "remote_score": 0.555,
     "family_score": 0.0,
     "visitor_quotes": [
-      "Yosemite is everything it's cracked up to be and more",
-      "I moved to the US two years ago for studies and became obsessed with the nature here"
+      "Forgot to post this video here of the bobcat we saw on Friday. This was in Yosemite ❤️",
+      "Firefall (Horsetail falls on El Capitan), Yosemite National Park Feb 22",
+      "I moved to the US two years ago for studies and became obsessed with the nature here. I've been to 9 national parks so far, and my favorite picture is from Yosemite."
     ]
   },
   {
@@ -73,9 +74,9 @@ const PARKS_DATA = [
     "remote_score": 0.511,
     "family_score": 0.194,
     "visitor_quotes": [
-      "I just love the endless layered drama - red cliffs catching the afternoon light while deep shadows carve the canyon.",
-      "It was 100% as amazing as I remembered! I lucked out and was there when it was not crowded.",
-      "Fell in love with this place and the views. It was such an amazing experience."
+      "I arrived just before sunset then came back before sunrise the next day to do some light hiking and photography at the South Rim.",
+      "I was lucky enough to be at the North Rim after the park had opened up again after the summer's devastating forest fires — I practically had the place to myself.",
+      "This was a hike down the canyon 4-5 hours round trip on the South Kaibab Trail. Thankfully had enough water. It was such an amazing experience."
     ]
   },
   {
@@ -99,9 +100,8 @@ const PARKS_DATA = [
     "remote_score": 0.722,
     "family_score": 0.049,
     "visitor_quotes": [
-      "Utah is insanely underrated. What an otherwordly place.",
-      "I swear this place comes to me in my dreams so often now. So special.",
-      "It was absolutely beautiful with all of the snow!!"
+      "Anyone else ever find the dolphin in the sky at The Narrows Zion?",
+      "Located on the less popular eastern side of the park. Road to the trailhead requires driving a few miles on poor dirt roads passable with 4WD. Couple weeks ago I did the 7 mile round-trip hike starting at 530 am for sunrise."
     ]
   },
   {
@@ -126,8 +126,8 @@ const PARKS_DATA = [
     "family_score": 0.049,
     "visitor_quotes": [
       "Sunrise at Inspiration Point. 9°F with 20-30mph winds. Completely worth it.",
-      "It was absolutely beautiful with all of the snow!!",
-      "Such an amazing view. As I understand it the horizon is over 80 miles away from where I am standing."
+      "We took a trip to Zion last week and did a day in Bryce Canyon. It was absolutely beautiful with all of the snow!! All pictures are from Sunrise and Sunset Points, Navajo Loop, Peekaboo Loop, Queen's Garden, and Bryce Point",
+      "Hiked the Navajo Loop to Peekaboo and Queens Garden then back up to Sunset Point through Wall Street. Absolutely incredible."
     ]
   },
   {
@@ -151,9 +151,9 @@ const PARKS_DATA = [
     "remote_score": 0.0,
     "family_score": 0.096,
     "visitor_quotes": [
-      "Arches never ceases to amaze — Such a stunning park, have been many times now but every time there's a new angle or light that makes this park shine",
-      "I've never been to a national park before, Arches was amazing to see! It truly felt like another planet.",
-      "My first visit last week and I was blown away!"
+      "From Delicate Arch to Double Arch to Park Avenue to Balanced Rock and the 4x4 road back to 191, it was a great day to be in Arches NP.",
+      "I've never been to a national park before, Arches was amazing to see! I managed to get a photo of the delicate arch with no one in it.",
+      "The Fiery Furnace felt like another planet."
     ]
   },
   {
@@ -178,8 +178,8 @@ const PARKS_DATA = [
     "family_score": 0.127,
     "visitor_quotes": [
       "It's a good mix of everything from Moab to Zion! Less crowds in November. It's cold! But wow breathtaking.",
-      "A short add-on to business in SLC, the last of the Mighty Five for us. Glad we made it, but wish we could have stayed longer. We managed to squeeze in 4 hikes and 2 Fruita pies!",
-      "We drove into Capitol Reef for the first time and caught this view. It's an amazing park!"
+      "We managed to squeeze in 4 hikes and 2 Fruita pies!",
+      "The 'reef' part comes from the Waterpocket Fold, an up-thrust ridge of rock in the Earth's crust that many travelers ref"
     ]
   },
   {
@@ -203,9 +203,9 @@ const PARKS_DATA = [
     "remote_score": 0.295,
     "family_score": 0.049,
     "visitor_quotes": [
-      "I was overwhelmed by how vast it was.",
-      "This was when I truly began to feel the vastness of what protected lands mean. The sacredness of what they mean; petroglyphs, shelters, primordial civilizations that still exist within our society but pushed to the periphery.",
-      "Canyonlands National Park is criminally underrated."
+      "I had been planning on doing this for 2 years since the last time I was in Moab. Previously I had gone to the Grand View Point, and seen the epic vista, but felt like I hadn't really experienced the park or rather just scratched the surface. Well, traveling the White Rim road I really felt like I got to experience it.",
+      "I've been to the Island in the Sky section of Canyonlands probably 12 times but have never made it over to the Needles side. Finally went last weekend and was amazed at what I've been missing! We hiked Druid Arch which was long but definitely worth it if you are up for it!",
+      "Between them there's a grandeur and inaccessibility to Canyonlands that makes it feel special."
     ]
   },
   {
@@ -229,8 +229,8 @@ const PARKS_DATA = [
     "remote_score": 0.453,
     "family_score": 0.096,
     "visitor_quotes": [
-      "Rocky Mountain National Park served me a huge slice of humble pie today.",
       "Even in the winter, it's always a fun hike up to Dream Lake in Rocky Mountain National Park",
+      "Rocky Mountain National Park served me a huge slice of humble pie today. So I've been training pretty hard for my summer vacation, walking 5 miles before work and typically jogging one or two of them, then using one of my days off for long hikes with a decent number of floors.",
       "Dream Lake, one of our favorites at RMNP!"
     ]
   },
@@ -255,8 +255,9 @@ const PARKS_DATA = [
     "remote_score": 0.479,
     "family_score": 0.218,
     "visitor_quotes": [
-      "The most scenically diverse park I've been to. The Hoh rainforest was magical.",
-      "Incredibly diverse landscapes and the temperatures at this time were averaging low 60's. These are from Rialto beach, Second beach, Hoh and Quinault rainforests, Hurricane Ridge, and Cape Flattery."
+      "The Hoh rainforest was magical.",
+      "I stayed at Port Angeles and drove a bunch. Incredibly diverse landscapes... These are from Rialto beach, Second beach, Hoh and Quinault rainforests, Hurricane Ridge, and Cape Flattery.",
+      "The Hoh Rainforest felt like walking through a fairytale — everything draped in moss."
     ]
   },
   {
@@ -281,8 +282,9 @@ const PARKS_DATA = [
     "family_score": 0.0,
     "visitor_quotes": [
       "Hidden gem of the evergreen state!",
-      "The North Cascades exceeded expectations",
-      "Fell in love over Labor Day weekend"
+      "A cloudy day at North Cascades NP — Diablo Lake",
+      "Larch season at the North Cascades NP!",
+      "Great day trip to North Cascades National Park. Wish we had planned multiple days as a few hours was definitely not enough. Incredibly beautiful"
     ]
   },
   {
@@ -306,9 +308,9 @@ const PARKS_DATA = [
     "remote_score": 0.469,
     "family_score": 0.073,
     "visitor_quotes": [
-      "Mount Rainier really blew us away!",
-      "Pictures don't do it justice.",
-      "Conditions: sideways rain, storm force wind, freezing temps, and zero visibility. Photos: worth it"
+      "Hiking the full Skyline was pretty treacherous, particularly on the eastern side but at least the trails were open, unlike Crater Lake where many of them were closed.",
+      "All taken from Skyline Trail. Conditions: sideways rain, storm force wind, freezing temps, and zero visibility.",
+      "The Mt. Rainier East Loop trail was a whole lot more than anyone in my group had bargained for with the limited information available on conditions."
     ]
   },
   {
@@ -333,7 +335,7 @@ const PARKS_DATA = [
     "family_score": 0.148,
     "visitor_quotes": [
       "Woke up early to hike to Watchman's Tower and then went down for a swim right after the sun was up",
-      "Visited Crater Lake in September and it was cloudy when we arrived and for the first couple of hours. But then around lunchtime the sun came out and wow, it's lit",
+      "In addition to the views from the rim trail, the hiking within the park was also amazing",
       "The lake looks like glass. A beautiful sight to behold."
     ]
   },
@@ -358,9 +360,9 @@ const PARKS_DATA = [
     "remote_score": 0.86,
     "family_score": 0.145,
     "visitor_quotes": [
-      "Overall loving it. It's a shame though that photos cannot display the beauty of these trees.",
-      "Loved the feeling of driving some of the back roads of the park in the fog and drizzle. Each bend in the road was like driving into the unknown.",
-      "These trees are truly incredible. I've traveled to two places where I didn't feel like I was on earth."
+      "My favorite hike in the entire park…Grove of Titans.",
+      "I loved the feeling of driving some of the back roads of the park in the fog and drizzle. Each bend in the road was like driving into the unknown.",
+      "I successfully completed the 10 mile fern canyon loop in 5 hours, definitely worth the two blisters I got."
     ]
   },
   {
@@ -384,9 +386,8 @@ const PARKS_DATA = [
     "remote_score": 0.52,
     "family_score": 0.194,
     "visitor_quotes": [
-      "Sequoia and Kings Canyon were breathtaking",
-      "I just drove the north and south entrance into sequoia (drove into kings canyon via hwy 180 and drove out of sequoia via south entrance). One of the most terrifying things I've ever done. Both of those drives. Hwy 180 had almost zero guardrails and an absolutely massive drop.",
-      "Yosemite and Sequoia / Kings Canyon get a lot more love (well earned) but Pinnacles is a quiet national park with some really unique hiking experiences."
+      "I drove into kings canyon via hwy 180 and drove out of sequoia via south entrance — one of the most terrifying things I've ever done, with hwy 180 having almost zero guardrails and an absolutely massive drop.",
+      "By the time I got into the higher elevations at Sequoia National Park, it started snowing on me."
     ]
   },
   {
@@ -410,9 +411,9 @@ const PARKS_DATA = [
     "remote_score": 0.701,
     "family_score": 0.096,
     "visitor_quotes": [
-      "I wasn't ready for this much majesty.",
+      "I wasn't ready for this much majesty — Avalanche lake in Glacier National Park. Did 4.5 miles roundtrip to go fishing here.",
       "Two weeks of setting up and tearing down camp in near-freezing temps and rain, issues with logistics, planning, and group tensions, but it was all worth it for the most jaw-dropping sights I've ever gotten to witness and hike in.",
-      "Water like glass in Glacier National Park."
+      "Salamander glacier from view off 'Many Glacier' boat tour at the Many Glacier hotel, and the view at the end of Avalanche Lake trail — incredible September week in GNP!"
     ]
   },
   {
@@ -436,8 +437,8 @@ const PARKS_DATA = [
     "remote_score": 0.185,
     "family_score": 0.049,
     "visitor_quotes": [
+      "Saw on the Jenny Lake hidden falls trail about 5 min from the visitor center",
       "I'm not used to mountains looking so jagged. That means they're younger, right?",
-      "My absolute favorite park to date.",
       "I just did a Grand Teton->Yellowstone->Glacier trip and it was epic."
     ]
   },
@@ -463,8 +464,8 @@ const PARKS_DATA = [
     "family_score": 0.096,
     "visitor_quotes": [
       "Just a drive in Denali around 11pm when the wildlife comes out and the sun makes the mountains glow",
-      "We were incredibly lucky to have a clear shot of Denali!",
-      "The crown jewel of the continent"
+      "Taken during a flight seeing tour of the park. We were incredibly lucky to have a clear shot of Denali!",
+      "One of my fave pictures: Mt. Denali from Stony Hill Overlook (Mile 61.95) - Denali National Park."
     ]
   },
   {
@@ -489,7 +490,7 @@ const PARKS_DATA = [
     "family_score": 0.151,
     "visitor_quotes": [
       "Whimsical wildlife viewing against a dramatic volcanic landscape.",
-      "I'm determined to get there this summer. Brooks Camp permits became available today and I was ready as soon as they opened, but I was still too slow to snag a spot during peak salmon run."
+      "I was interested in visiting katmai national parks mainly for the bear viewing at Brooks Falls."
     ]
   },
   {
@@ -514,8 +515,8 @@ const PARKS_DATA = [
     "family_score": 0.065,
     "visitor_quotes": [
       "I got caught in a monsoon storm on Sunday in Saguaro National Park. The setting sun transformed large raindrops into sparkling jewels.",
-      "Three years ago today, a rare winter storm transformed Saguaro National Park into something almost unrecognizable. Snow settled into the canyon, mist softened the distance, and the saguaros stood suspended between seasons.",
-      "We got up very early to go hiking, opted for shorter hikes, kept plenty of water on us and in the car, and had trail mix handy at all times."
+      "We got up very early to go hiking, opted for shorter hikes, kept plenty of water on us and in the car, and had trail mix handy at all times.",
+      "Three years ago today, a rare winter storm transformed Saguaro National Park into something almost unrecognizable. Snow settled into the canyon, mist softened the distance, and the saguaros stood suspended between seasons."
     ]
   },
   {
@@ -539,9 +540,9 @@ const PARKS_DATA = [
     "remote_score": 0.641,
     "family_score": 0.194,
     "visitor_quotes": [
-      "the painted desert was really pretty!",
-      "Petrified Forest National Park is an underrated place filled with color.",
-      "Lucky to have some sunshine on the Blue Mesa Trail today since it was raining/snowing/hailing on and off all day."
+      "You would never expect Arizona to previously be a giant river chain over 270 million years ago! If you have been, check out all the amazing trails along the way, especially painted desert and blue mesa!",
+      "Lucky to have some sunshine on the Blue Mesa Trail today since it was raining/snowing/hailing on and off all day.",
+      "Petrified Forest National Park includes a variety of petrified trees along with a vast painted desert. The fossilized trees date back to about 225 million years."
     ]
   },
   {
@@ -565,8 +566,9 @@ const PARKS_DATA = [
     "remote_score": 0.61,
     "family_score": 0.12,
     "visitor_quotes": [
-      "Most of this hike follows a wash up into the mountains. The staircase is a bit of a challenge you can either climb up it or inch around the ledge near the top.",
-      "Extremely underrated park: Guadalupe Mountains"
+      "Most of this hike follows a wash up into the mountains. I continued past the hallway quite a while. The staircase is a bit of a challenge you can either climb up it or inch around the ledge near the top.",
+      "Hiked late December, all pictures from the same day at Mckittrick Canyon, Guadalupe Mountains NP!",
+      "I made a quick visit to Guadalupe Mountains National Park a few months ago and was greeted with lots of fog. Unfortunately, it never cleared, but I got some really cool eerie desert shots"
     ]
   },
   {
@@ -590,9 +592,8 @@ const PARKS_DATA = [
     "remote_score": 0.9,
     "family_score": 0.194,
     "visitor_quotes": [
-      "Still daydreaming about this park from my cubicle.",
-      "The remoteness, calm and clarity of the night sky was magical about Big Bend.",
-      "Worth the long drive through the desert! Night sky was incredible…especially from our campsite along the Rio Grande."
+      "BBNP is a long way from anywhere…8.5 hour drive for me from inside Texas! And then another 30 miles to the Ranger Station/Visitor Center. Night sky was incredible…especially from our campsite along the Rio Grande.",
+      "For me it was the remoteness, calm and clarity of the night sky that was magical about Big bend."
     ]
   },
   {
@@ -616,9 +617,9 @@ const PARKS_DATA = [
     "remote_score": 0.381,
     "family_score": 0.412,
     "visitor_quotes": [
-      "This park instantly shoots up into my top-5, maybe even top 3.",
-      "Wish I cared about National Parks at an earlier age. New convert.",
-      "I got to spend a bit more time exploring the further out parts of Everglades and Biscayne National Parks."
+      "Saw countless gators on the Shark Valley bike path, plenty of little guys too!",
+      "15 mile bike ride through Shark Valley (Everglades National Park)",
+      "Visited the Nike Missile Site in Everglades National Park — it's one of those things that you wouldn't expect to find in a national park but then you hear the story and it makes sense."
     ]
   },
   {
@@ -642,9 +643,9 @@ const PARKS_DATA = [
     "remote_score": 0.313,
     "family_score": 0.339,
     "visitor_quotes": [
-      "A little rainy but still an amazing visit.",
-      "More than 100 miles in Great Smoky Mountains NP (in June and October) - the most visited NPS.",
-      "Great Smoky Mountains, with fall foliage on full display."
+      "I hiked more than 100 miles in Great Smoky Mountains NP in June and October — the most visited NPS.",
+      "This fall trip from a few years back is still one of the most beautiful fall seasons I've witnessed!",
+      "First time there, and I was really surprised by how lush everything was."
     ]
   },
   {
@@ -668,9 +669,9 @@ const PARKS_DATA = [
     "remote_score": 0.542,
     "family_score": 0.145,
     "visitor_quotes": [
-      "Still had fun but it was raining on me the entire time. Scrambling was pretty difficult with how wet it was but lowkey pretty fun.",
-      "Crazy what a difference 24h can make! Last three photos from the summit of Hawksbill on Sat, where it was 30 degrees and icing, and first few photos from an Old Rag on Sunday, clear and gorgeous.",
-      "Shenandoah on a cloudy day is beautiful"
+      "Recently hiked Old Rag in Shenandoah — check the forecasts folks! Still had fun but it was raining on me the entire time. Scrambling was pretty difficult with how wet it was but lowkey pretty fun.",
+      "Two very different days in Shenandoah NP. Last three photos from the summit of Hawksbill on Sat, where it was 30 degrees and icing, and first few photos from an Old Rag on Sunday, clear and gorgeous.",
+      "Visited Shenandoah over the last few days and the fog was so dense that the overlooks had 0 visibility. Opted to check out the wildlife instead."
     ]
   },
   {
@@ -694,9 +695,9 @@ const PARKS_DATA = [
     "remote_score": 0.818,
     "family_score": 0.117,
     "visitor_quotes": [
+      "Visit Bass Harbor Lighthouse around sunset. Wait for the tide to recede scurry into the rocks and take a pic.",
       "I highly recommend spending a night stargazing on the cliffs of Acadia. Nothing like it with the sound of the waves washing against the rocky cliffs, the buoy bell in the distance, and the stars shining brightly overhead.",
-      "I watched the last sunrise of 2025 from this spot above the water at Otter Cliff in Acadia. It was very, very cold this year and I was lucky this spot was free of ice.",
-      "We were in Maine seeing friends and decided on a side trip to Acadia. I had no idea what to expect, but it was utterly gorgeous."
+      "I watched the last sunrise of 2024 and now 2025 from this spot above the water at Otter Cliff in Acadia. Both years cloudless sunrises but a beautiful way to spend the morning."
     ]
   },
   {
@@ -721,8 +722,7 @@ const PARKS_DATA = [
     "family_score": 0.669,
     "visitor_quotes": [
       "Being able to walk out on Lake Kabetogama was a surreal experience. It definitely was nerve wracking the first few steps but the anxiety quickly faded and turned into pure amazement.",
-      "Arrived late after a long drive but had time to do a little kayaking. So peaceful here, I can't wait to explore more of the islands/hiking trails.",
-      "Couldn't sleep, caught the sunrise."
+      "1st night at Voyageurs — arrived late after a long drive but had time to do a little kayaking. so peaceful here, I can't wait to explore more of the islands/hiking trails."
     ]
   },
   {
@@ -746,9 +746,9 @@ const PARKS_DATA = [
     "remote_score": 0.405,
     "family_score": 0.194,
     "visitor_quotes": [
-      "This was the first place where the terrain felt truly different.",
-      "Felt like a Martian landscape.",
-      "I was absolutely taken aback at the beauty!"
+      "The very first thing i saw after entering the park: massive bison getting his morning breakfast in.",
+      "Badlands National Park, of course, is famous for its strikingly eroded landscape - a maze of jagged peaks.",
+      "Visited badlands national park for the first time over the summer, even managed to stand a few feet away from a rattler!"
     ]
   },
   {
@@ -772,9 +772,8 @@ const PARKS_DATA = [
     "remote_score": 0.646,
     "family_score": 0.096,
     "visitor_quotes": [
-      "Joshua Tree is such a gem and the Cholla Cactus Garden for sunrise is one of my favorite places with the park.",
-      "Joshua Tree National Park. Truly, such an amazing and sacred place to visit.",
-      "The Sunsets in Joshua Tree are Amazing"
+      "Joshua Tree is such a gem and the Cholla Cactus Garden for sunrise is one of my favorite places with the park. Cholla cactus play an important role in the park and there are many compositions to be found because they are all different!",
+      "We were only there for two nights, but we saw pretty much all of the highlights! Plus, on our last night we headed back to Cap Rock around 8."
     ]
   },
   {
@@ -798,9 +797,9 @@ const PARKS_DATA = [
     "remote_score": 0.659,
     "family_score": 0.049,
     "visitor_quotes": [
-      "It's definitely not known for being hospitable, but the views almost feel eerie with how cool they are. Something about it feeling so 'dead' makes it surreal to be there.",
       "My first trip to Death Valley was amazing. Capturing the stars there was so much fun, can't wait to come back again!",
-      "So much more gorgeous than I could've imagined!"
+      "Milky Way Arch over Badwater Basin, Death Valley NP",
+      "It's definitely not known for being hospitable, but the views almost feel eerie with how cool they are. It's not as green as great smoky mountains or as full of wildlife as Yellowstone, but something about it feeling so \"dead\" makes it surreal to be there."
     ]
   },
   {
@@ -824,9 +823,9 @@ const PARKS_DATA = [
     "remote_score": 0.79,
     "family_score": 0.553,
     "visitor_quotes": [
-      "Underrated alpine sanctuary in the middle of the desert.",
-      "When we woke up the first morning it had snowed overnight and it genuinely made everything look like a winter wonderland from a Christmas song.",
-      "No crowds, no lines, no permits. Just amazing views, some caves, and the oldest living trees on the planet to keep you company."
+      "When we woke up the first morning it had snowed overnight and it genuinely made everything look like a winter wonderland from a Christmas song. The scenic drive to the top closed so we decided to hike Lehman creek.",
+      "Between the wheeler peak drive, the alpine lakes hike, and the archaeological site, it's a great visit! Add to that how much we enjoyed experiencing the universe with no light pollution, and we might have to come back here someday.",
+      "An absolute gem of a destination with stunning views of mountains, glaciers, alpine lakes, lush forests, caves and desert, all with barely any crowds."
     ]
   },
   {
@@ -850,9 +849,8 @@ const PARKS_DATA = [
     "remote_score": 0.693,
     "family_score": 0.0,
     "visitor_quotes": [
-      "I feel like it's a very slept on National Park. Loved how remote it felt and thought some of the topographical features were as stunning as a lot of the more popular parks.",
-      "An excellent trip to a very underrated national park!",
-      "Pristine park of the prairie!"
+      "Loved how remote it felt and thought some of the topographical features were as stunning as a lot of the more popular parks.",
+      "An excellent trip to a very underrated national park with photos from both the South Unit and North Unit."
     ]
   },
   {
@@ -876,9 +874,9 @@ const PARKS_DATA = [
     "remote_score": 0.454,
     "family_score": 0.0,
     "visitor_quotes": [
-      "A small but beautiful park.",
-      "Such an incredibly underrated park.",
-      "Simply gorgeous!"
+      "The name of the canyon actually comes from the fact that parts of the gorge only receive about 30 minutes of sunlight on any given day, which shrouds much of it in darkness.",
+      "I hiked back up the Warner route in the morning at Black Canyon of the Gunnison in 2018.",
+      "I grew up all around the Denver area, hadn't heard of this park until earlier last year. Finally made it out. Such an incredibly underrated park."
     ]
   },
   {
@@ -902,9 +900,9 @@ const PARKS_DATA = [
     "remote_score": 0.65,
     "family_score": 0.071,
     "visitor_quotes": [
-      "Mesa Verde National Park wasn't even on my bucket list but after our visit, I am encouraging everyone to add it to theirs.",
-      "Mesa Verde wasn't really on my radar. My expectations were not high when we booked the trip, but we spent four days here and had a blast.",
-      "Really an amazing place. Surprised how much I liked it."
+      "The guided tours on all three mesas were excellent (though Long House stood out).",
+      "I have previously toured balcony house and cliff palace. I have also hiked the soda canyon trail.",
+      "Highly recommend the Petroglyph trail."
     ]
   },
   {
@@ -928,9 +926,9 @@ const PARKS_DATA = [
     "remote_score": 0.57,
     "family_score": 0.241,
     "visitor_quotes": [
-      "The snow added such a beautiful contrast. And what a workout it was!",
-      "Sunset conditions for climbing the dunes were incredible! Only take away: wear more mosquito repellent! They are ridiculous and vicious this year.",
-      "There are many great things about the USA, but few are greater than how you have preserved your natural treasures."
+      "We had a great time exploring these incredible sand dunes! The snow added such a beautiful contrast. And what a workout it was!",
+      "Enjoyed 2 days of camping at Piñon Flats campground- though the days were warm, sunset conditions for climbing the dunes were incredible! Only take away: wear more mosquito repellent! They are ridiculous and vicious this year.",
+      "You don't really appreciate just how large these dunes are until you stand next to them."
     ]
   },
   {
@@ -955,8 +953,8 @@ const PARKS_DATA = [
     "family_score": 0.096,
     "visitor_quotes": [
       "The shots of the fog under the bridge at sunset are unforgettable.",
-      "Fresh, unexpected snow over night made it a magical seen with the fog this morning.",
-      "Hiking in the Gorge and the water activities are all amazing."
+      "We did the sandstone falls boardwalk, grandview rim trail, castle rock, turkey spur rock, visited the abandoned town of Thurmond, and the canyon rim bridge overlook.",
+      "Fresh, unexpected snow over night made it a magical scene with the fog this morning at New River Gorge."
     ]
   },
   {
@@ -980,9 +978,8 @@ const PARKS_DATA = [
     "remote_score": 0.605,
     "family_score": 0.906,
     "visitor_quotes": [
-      "Glacier Bay was incredible",
-      "Glacier Bay was truly the highlight of our Alaska cruise - this incredibly beautiful fjord",
-      "Finally made it on a cruise and it was beautiful"
+      "We recently cruised through Glacier Bay National Park and saw several glaciers, Margerie was the first of them. It is 21 miles (34 km) long and 350 feet thick.",
+      "Glacier Bay was truly the highlight of our Alaska cruise - my trip report on our visit through this incredibly beautiful fjord"
     ]
   },
   {
@@ -1006,7 +1003,7 @@ const PARKS_DATA = [
     "remote_score": 0.326,
     "family_score": 0.0,
     "visitor_quotes": [
-      "Wife and I had the chance to visit Haleakalā and Hawaiʻi Volcanoes. Such amazing places ❤️"
+      "Lava lake at the Halema'uma'u Crater on the summit of Kīlauea volcano."
     ]
   },
   {
@@ -1030,9 +1027,9 @@ const PARKS_DATA = [
     "remote_score": 0.211,
     "family_score": 0.25,
     "visitor_quotes": [
-      "The Haleakalā crater and its cinder cones are breathtaking. These images don't do the colors justice.",
       "Getting up at 3 AM to leave our hotel in Kahului to snag one of the last parking spots at the top of the mountain to view the Haleakalā sunrise was spectacular.",
-      "Who knew Hawaii could look so otherworldly!"
+      "My husband and I hiked a portion of the sliding sands trail and then stayed for the sunset.",
+      "Alone inside a volcanic crater, on the Keonehe'ehe'e trail, Haleakalā NP on Maui, HI, USA"
     ]
   },
   {
@@ -1056,9 +1053,8 @@ const PARKS_DATA = [
     "remote_score": 0.677,
     "family_score": 0.32,
     "visitor_quotes": [
-      "This place is in the perfect place to be a hub for Grand Canyon, Zion, Bryce Canyon, Vegas, and more. And beautiful on its own.",
-      "After reading about Glen Canyon and seeing photos from all the places near Lake Powell, I'm much more excited.",
-      "It was a wonderful trip."
+      "Glen Canyon National Recreation Area, located along the Colorado River northeast of the Grand Canyon, straddles the border of AZ & UT. It is home to the Glen Canyon Dam, which impounds Lake Powell behind it.",
+      "This is from High Spur in the Orange Cliffs section of Glen Canyon National Recreation Area, looking over Millard Canyon and the Maze District of Canyonlands."
     ]
   },
   {
@@ -1082,9 +1078,8 @@ const PARKS_DATA = [
     "remote_score": 0.476,
     "family_score": 0.453,
     "visitor_quotes": [
-      "Just me, and about ten thousand fiddler crabs.",
-      "While there are no mountains in this part of the state the views are still beautiful. Beach with windswept sand dunes, salt marsh, and even some forest views.",
-      "Hiking deep in Cape Cod is a world like no other"
+      "Had an interesting hike this morning, along the Great Island Trails at Cape Cod National Seashore. Just me, and about ten thousand fiddler crabs.",
+      "Hiked the Great Island Trail in Wellfleet, MA recently. While there are no mountains in this part of the state the views are still beautiful—beach with windswept sand dunes, salt marsh, and even some forest views."
     ]
   },
   {
@@ -1108,9 +1103,9 @@ const PARKS_DATA = [
     "remote_score": 0.292,
     "family_score": 0.184,
     "visitor_quotes": [
-      "It was nice and sunny at the main VC, but by the time you got down to the beach, it was no longer beach weather.",
-      "Last time we were there (over ten years ago), the steps to the lighthouse were closed for safety reasons. This time we were able to walk the 309 steps down to the lighthouse and back up again.",
-      "Point Reyes is a treasure"
+      "We hiked to the historic lighthouse. Last time we were there (over ten years ago), the steps to the lighthouse were closed for safety reasons. This time we were able to walk the 309 steps down to the lighthouse and back up again.",
+      "By the time you got down to the beach, it was no longer beach weather — the lighthouse at namesake point was shrouded in clouds for the most part.",
+      "Alamere Falls is a rare 'tidefall', a waterfall that flows directly into the ocean. The only other tidefall in California is McWay Falls in Big Sur."
     ]
   },
   {
@@ -1135,7 +1130,7 @@ const PARKS_DATA = [
     "family_score": 0.529,
     "visitor_quotes": [
       "Hiked 5 miles each way to camp at this spectacular backcountry site at Ruple Point, overlooking the Green River. Didn't see another person in 2 days.",
-      "Dinosaur National Monument is a hidden gem!"
+      "Named because of the vast collection of archeological sites it contains, including a quarry containing many dinosaur bones."
     ]
   },
   {
@@ -1159,9 +1154,9 @@ const PARKS_DATA = [
     "remote_score": 0.612,
     "family_score": 0.096,
     "visitor_quotes": [
-      "Hiking in the Gorge and the water activities are all amazing. The shots of the fog under the bridge at sunset are unforgettable.",
-      "One of our NEWEST national parks features one of the OLDEST rivers in the world. It was still beautiful and very interesting.",
-      "Gorgeous and diverse scenery and an amazing amount of undeveloped forest, plus some cool history of coal mining and mining towns."
+      "17.6 mile hike along the Buffalo River in Arkansas this past weekend.",
+      "Just finished thru hiking the Buffalo River Trail with my son for his 16th birthday. Perfect weather, iconic views, and memories to last a lifetime.",
+      "Standing in the Eye of the Needle, Buffalo National River, Arkansas"
     ]
   },
   {
@@ -1185,8 +1180,8 @@ const PARKS_DATA = [
     "remote_score": 0.717,
     "family_score": 0.0,
     "visitor_quotes": [
-      "Simply an amazing place.",
-      "Craters of the Moon NM and Sunset Crater Volcano NM are some examples of places that I think would make great National Parks."
+      "Can we do the drive loop and shorter hikes at Devils Orchard, Caves Trail, Spatter Cones etc in 2 or 3 hours?",
+      "Getting ready for an overnighter in Craters of the Moon"
     ]
   },
   {
@@ -1210,8 +1205,8 @@ const PARKS_DATA = [
     "remote_score": 0.896,
     "family_score": 1.0,
     "visitor_quotes": [
-      "Extending for 42 miles along the shore of Lake Superior this lakeshore extends along the shore for 42 miles and covers 73,236 acres of Michigan's Upper Peninsula.",
-      "Colors in the cliffs of the varied rock"
+      "Extending for 42 miles along the shore of Lake Superior with 73,236 acres, the lakeshore showcases the varied colors in the cliffs and rock formations.",
+      "Miners Castle Point at Pictured Rocks National Lakeshore features distinctive rock formations visible even in late winter."
     ]
   },
   {
@@ -1234,7 +1229,11 @@ const PARKS_DATA = [
     "water_score": 0.632,
     "remote_score": 0.761,
     "family_score": 0.0,
-    "visitor_quotes": []
+    "visitor_quotes": [
+      "Sleeping Bear Dunes National Lakeshore was a dream!",
+      "Last week, while I was camping at Sleeping Bear Dunes, I saw a sign at the ranger station saying that they were running a trial of an autonomous electric bus on the Pierce Stocking Scenic Drive.",
+      "Perfect day on the dunes over lake Michigan. Sleeping Bear Dunes National Lake Shore, South Manitou Island."
+    ]
   },
   {
     "code": "apis",
@@ -1257,8 +1256,9 @@ const PARKS_DATA = [
     "remote_score": 0.803,
     "family_score": 0.0,
     "visitor_quotes": [
-      "Backpacking/ kayaking the Apostle Islands and the sea caves has on my bucket list forever and finally did it! Definitely underrated because of how out there is it.",
-      "Had some overcast/ rainy days and some beautiful ones. Water was never too rough, lots of protection from the open Lake from the islands"
+      "I kayaked the sea caves of the Apostle Islands, and it was every bit as incredible as I'd imagined.",
+      "For our first sea kayaking trip to the Apostle Islands, we decided to grab the only backcountry permit available for Sand Island. We had nearly 2 miles of private beach to ourselves.",
+      "Backpacking/kayaking the Apostle Islands and the sea caves has been on my bucket list forever and finally did it! Water was never too rough, lots of protection from the open Lake from the islands."
     ]
   },
   {
@@ -1282,8 +1282,8 @@ const PARKS_DATA = [
     "remote_score": 0.296,
     "family_score": 0.459,
     "visitor_quotes": [
-      "Hiked about 10 miles today. Most of the day it was 10 degrees but felt like -6! Beautiful national park - absolutely loved it!",
-      "I have a lot more appreciation for this park seeing it with a beautiful blanket of snow."
+      "Went here and was extremely disappointed UNTIL i did my final trail in the park.. Miller woods trail and oh my god wow! This was the highlight of my trip! I never heard of an oak savannah but i came out in love with such a BEAUTIFUL biome!",
+      "I have a lot more appreciation for this park seeing it with a beautiful blanket of snow at the end of autumn."
     ]
   },
   {
@@ -1307,8 +1307,8 @@ const PARKS_DATA = [
     "remote_score": 0.704,
     "family_score": 0.268,
     "visitor_quotes": [
-      "Like a mini-Yellowstone, but without the crowds!",
       "It's a great hiking park and you can see a lot in a little time. I had about 2.5 days and it was perfect!",
+      "I cannot stress enough how underrated this park is. It had awesome views, cool volcanic activity like Yellowstone, amazing birds/wildflowers and some great hikes.",
       "Stopped by Lassen National Park this summer on a whim. We loved it! Got to meet some park locals (deer and bugs), and swim in the lake."
     ]
   },
@@ -1335,7 +1335,7 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Great hiking, epic ocean kayaking to explore sea caves, and fantastic snorkeling around Scorpion Bay. Add in some cute island foxes and breaching humpback whales, and what's not to love?",
       "Three hour ferry to an island that has 15 campsites. Once the day trippers leave, that's all the people on the island, plus a few rangers. Very peaceful.",
-      "This time of year seems to be a great time to visit: the sun was out and the island was green and blooming!"
+      "The sun was out and the island was green and blooming on Anacapa Island, a part of Channel Islands National Park."
     ]
   },
   {
@@ -1360,7 +1360,7 @@ const PARKS_DATA = [
     "family_score": 0.279,
     "visitor_quotes": [
       "For me, it was Harding Icefield in Kenai Fjords. I had heard many good things, but I didn't know I'd be transported to a whole different world! It was life changing!",
-      "Easily one of the most beautiful national parks in the US"
+      "Made it to the top of the Harding ice field trail in Kenai Fjords NP this summer"
     ]
   },
   {
@@ -1385,8 +1385,8 @@ const PARKS_DATA = [
     "family_score": 0.5,
     "visitor_quotes": [
       "The two hour tour went by very quickly, and the entrance to this tour was very dramatic.",
-      "The pictures don't do it justice. Well worth the money to tour the caves.",
-      "It is a 6.5 hour tour we took last weekend. The three park rangers are awesome and won't even take tips!"
+      "We did the historical tour this time and it was so good. If you haven't done this one I recommend it. A great 2 hours.",
+      "Lantern tours are the coolest!"
     ]
   },
   {
@@ -1410,8 +1410,8 @@ const PARKS_DATA = [
     "remote_score": 0.94,
     "family_score": 0.169,
     "visitor_quotes": [
-      "It's a remote and rugged national park experience. Rocky terrain, and almost total solitude.",
-      "Incredibly isolated island in Lake Superior, but well worth the time and effort to make the journey.",
+      "I spent 4 days on Isle Royale hiking the Minong Ridge Trail (55 miles). It's a remote and rugged national park experience with rocky terrain, and almost total solitude.",
+      "In September 2023, two friends and I hiked from Windigo to Rock Harbor, about 50 miles over five days, and it turned into one of the most memorable trips I've ever done.",
       "The ferry drop-off really makes it feel like you're leaving civilization behind. I didn't see another person for days."
     ]
   },
@@ -1436,9 +1436,9 @@ const PARKS_DATA = [
     "remote_score": 0.031,
     "family_score": 0.151,
     "visitor_quotes": [
-      "such a vividly vibrant place to start 2025!",
       "The beaches? Next level. Cinnamon Bay was a personal favorite—quiet, stunning, and felt like paradise.",
-      "It's worth every $ to see this national treasure. Do the hikes, tour the ruins, sit on the beaches, do some snorkeling, eat the local food (and drink the rum)."
+      "We stayed in Sapphire Bay Condos on St. Thomas, then took the daily water taxi to St. John. Totally worth the effort.",
+      "The Annaberg Sugar Mill Historic Site in the US Virgin Islands National Park on St. John are the ruins of a wind powered sugar mill operated by the Danish when they colonized the islands."
     ]
   },
   {
@@ -1462,9 +1462,9 @@ const PARKS_DATA = [
     "remote_score": 0.623,
     "family_score": 0.072,
     "visitor_quotes": [
-      "Enjoyed a great day at this small park this past week. I did short hikes at Brandywine Falls, the Ledges (my favorite part), and Beaver Marsh, and visited the Boston Mills Visitor Center.",
-      "To the people who say that Cuyahoga Valley National Park isn't worth it... it is just as nice if not better than Hocking Hills",
-      "This park was a pleasant surprise. Ledges Trail is a must!"
+      "I did short hikes at Brandywine Falls, the Ledges (my favorite part), and Beaver Marsh, and visited the Boston Mills Visitor Center.",
+      "Ledges Trail is a must!",
+      "To the people who say that Cuyahoga Valley National Park isn't worth it: Beaver Marsh, The Ledges, Brandywine Falls — All of this is at CVNP, a place that is worth visiting."
     ]
   },
   {
@@ -1488,9 +1488,9 @@ const PARKS_DATA = [
     "remote_score": 0.521,
     "family_score": 0.101,
     "visitor_quotes": [
+      "All photos are from the Balconies Cave and High Peaks Loop which is a perfect day hike. We started at the Chaparral parking area on the west side.",
       "Caves, cliffs, and condors! Spent the beginning of the holiday weekend in California's newest National Park (Pinnacles NP)",
-      "Pinnacles is underrated — Underrated park within a short drive from the Bay Area. Yosemite and Sequoia / Kings Canyon get a lot more love (well earned) but Pinnacles is a quiet national park with some really unique hiking experiences.",
-      "A unique and surreal place with caves and towering monoliths."
+      "Pinnacles is underrated — Underrated park within a short drive from the Bay Area with some really unique hiking experiences."
     ]
   },
   {
@@ -1514,8 +1514,9 @@ const PARKS_DATA = [
     "remote_score": 0.621,
     "family_score": 0.191,
     "visitor_quotes": [
-      "I didn't come in expecting it to be Zion, Glacier, Yellowstone, Grand Canyon, etc, but it was still a beautiful park in its own right.",
-      "Dreary day was the perfect setting for Congaree!"
+      "It preserves the largest intact tract of old growth hardwood forest in the country, and includes several of the tallest trees of their particular species in this country.",
+      "My wife got me a trip to Congaree NP for my birthday and we went today. Now I've only been to 8 of the parks but this one is nothing like any other that I have seen before.",
+      "Kayaking Cedar Creek in the Congaree Wilderness."
     ]
   },
   {
@@ -1539,8 +1540,8 @@ const PARKS_DATA = [
     "remote_score": 0.329,
     "family_score": 0.611,
     "visitor_quotes": [
-      "I came for the cave, stayed for the bison herd!",
-      "I ended up chilling in a pull off with these guys for 30 minutes and getting some amazing close ups from inside my car. I never thought they would get so close to the vehicle traffic!"
+      "came for the cave, stayed for the bison herd!",
+      "I ended up chilling in a pull off with these bison guys for 30 minutes and getting some amazing close ups from inside my car. I never thought they would get so close to the vehicle traffic!"
     ]
   },
   {
@@ -1565,6 +1566,7 @@ const PARKS_DATA = [
     "family_score": 0.976,
     "visitor_quotes": [
       "Full day at Biscayne NP, snorkeling and paddle boarding. Winter is shaping up nicely.",
+      "Glass water at Biscayne this morning — Water is also super clear",
       "I was in South Florida over the weekend, and got to spend a bit more time exploring the further out parts of Everglades and Biscayne National Parks."
     ]
   },
@@ -1589,8 +1591,8 @@ const PARKS_DATA = [
     "remote_score": 0.402,
     "family_score": 0.387,
     "visitor_quotes": [
-      "A new thermal vent spewing steam in the air at Yellowstone National Park is gaining attention, mainly because it's visible from a road rather than any significant change in the park famous for its thousands of geysers, hot springs and bubbling mud pots.",
-      "Started my National Parks journey this year... Hot Springs National Park"
+      "Visited Hot Springs earlier in the week and a super underrated park! The city was really cool and historic, went to the BuckStaff Bathhouse, then I absolutely LOVED the trails!",
+      "Camping in a class C and hiking (moderate hikes). Any advice related to Acadia, Smoky Mts, Blue Ridge Parkway, Cuyahoga, Adirondacks, White Mountain, Hot Springs, Mammoth Cave, Gettysburg, New River Gorge"
     ]
   },
   {
@@ -1640,8 +1642,7 @@ const PARKS_DATA = [
     "family_score": 0.537,
     "visitor_quotes": [
       "Took the ferry and cruised through extremely choppy seas only for the clouds to part and the day turn quite beautiful as we arrived at Garden Key!",
-      "Didn't feel real. The history and wildlife and adventure of this park puts it in my top 5 for sure!",
-      "This park instantly shoots up into my top-5, maybe even top 3."
+      "Recently spent the day at Fort Jefferson @ Dry Tortugas NP — the history and wildlife and adventure of this park puts it in my top 5 for sure!"
     ]
   },
   {
@@ -1665,7 +1666,8 @@ const PARKS_DATA = [
     "remote_score": 0.667,
     "family_score": 0.0,
     "visitor_quotes": [
-      "Best way to escape the heat is to go as far underground as you can. Crazy to think Jim White just ... walked all the way down there. With a lantern. Absolute mad lad.",
+      "Carlsbad Caverns were wild — Best way to escape the heat is to go as far underground as you can. I got to the park just in time to catch a ranger tour, then hoofed it up to the surface the long way (a good workout).",
+      "Crazy to think Jim White just ... walked all the way down there. With a lantern. Absolute mad lad.",
       "My photos don't do the caverns justice. You have to visit the park to be truly in awe of it."
     ]
   },
@@ -1690,9 +1692,9 @@ const PARKS_DATA = [
     "remote_score": 0.523,
     "family_score": 0.421,
     "visitor_quotes": [
-      "The beauty exceeded expectations.",
+      "Photos are from my hike on Alkali trail. It was chilly and really windy.",
       "I love the way the blue layers of the dunes contrast with the orange ombré sky at sunset.",
-      "This place is magical!! The white dunes are beautiful with all the pastel colors of dawn and dusk."
+      "Went to White Sands last week and this place is magical!! I recommend going in the morning or around 5 or 6 pm, as it does get quite hot. Plus, the white dunes are beautiful with all the pastel colors of dawn and dusk."
     ]
   },
   {
@@ -1716,9 +1718,8 @@ const PARKS_DATA = [
     "remote_score": 0.881,
     "family_score": 0.196,
     "visitor_quotes": [
-      "Largest national park in the U.S. and well worth the 7 hour drive from Anchorage!",
       "Double rainbow over a cabin in Wrangell-St. Elias",
-      "XC Ski on the Copper Lake Trail, off the Nabesna road."
+      "Incredible Root Glacier Hike - Wrangell-St. Elias National Park"
     ]
   },
   {
@@ -1741,7 +1742,11 @@ const PARKS_DATA = [
     "water_score": 0.846,
     "remote_score": 0.701,
     "family_score": 0.169,
-    "visitor_quotes": []
+    "visitor_quotes": [
+      "9 days through Lake Clark National Park, featuring Turquoise Glacier",
+      "Mount Iliamna with Mount Redoubt in the foreground, Lake Clark National Park this morning",
+      "Found a pretty cool spot for our tent. Lake Clark National Park, AK"
+    ]
   },
   {
     "code": "gaar",
@@ -1764,8 +1769,9 @@ const PARKS_DATA = [
     "remote_score": 0.895,
     "family_score": 0.108,
     "visitor_quotes": [
-      "The most majestic, rugged and untouched wilderness I've experienced.",
-      "I thought my first visit to the Gates of the Arctic NP was a once-in-a-lifetime trip, but I'm now planning a camping trip."
+      "Glaciers of the Arrigetch Peaks, Gates of the Arctic National Park",
+      "Thinking back to a year ago when we were exploring Gates of the Arctic National Park. View from a plane over the Arrigetch Peaks.",
+      "Beautiful Takahula Lake, Gates of the Arctic National Park, from a short hike up a nearby ridge"
     ]
   }
 ];
