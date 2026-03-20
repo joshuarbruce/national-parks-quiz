@@ -54,7 +54,7 @@ Each of the nine dimensions is derived from a different data source and normaliz
 
 **Remoteness** — straight-line (haversine) distance from each park's geographic centroid to the nearest of 68 major US cities, including regional cities chosen to avoid penalizing parks that are genuinely accessible from smaller metros (e.g. Key West for Dry Tortugas, Jackson for Grand Teton, Moab for Arches). Log-transformed and scaled.
 
-**Family-friendliness** — derived from Reddit posts across r/nationalparks, r/hiking, and r/backpacking. For each park, the share of posts containing family- and accessibility-related terms ("kids," "stroller," "wheelchair," "toddler," etc.) is computed using keyword matching and VADER sentiment analysis. The raw ratio is min-max scaled across all parks. Parks with no Reddit data default to 0 (neutral, not penalized).
+**Family-friendliness** — derived from Reddit posts across r/nationalparks, r/hiking, r/backpacking, r/camping, and r/outdoors. For each park, the share of posts containing family- and accessibility-related terms ("kids," "stroller," "wheelchair," "toddler," etc.) is computed using keyword matching and VADER sentiment analysis. The raw ratio is min-max scaled across all parks. Parks with no Reddit data default to 0 (neutral, not penalized).
 
 ### Matching algorithm
 
@@ -76,7 +76,7 @@ Match percentages are scaled linearly so the best-matching park in the filtered 
 
 ### Visitor quotes
 
-The "What visitors say" snippets on result cards are extracted from Reddit post titles and bodies using the Claude API (claude-haiku-4-5). For each park, the top posts from the three subreddits are sent to Claude with a prompt to extract 2–3 short, vivid, visitor-voice quotes. These are stored as static data and do not involve live API calls during quiz use.
+The "What visitors say" snippets on result cards are extracted from Reddit post titles and bodies using the Claude API (claude-haiku-4-5). For each park, relevant posts from five subreddits (r/nationalparks, r/hiking, r/backpacking, r/camping, r/outdoors) are filtered for on-topic content, then sent to Claude with a prompt requiring park-specific detail — named trails, landmarks, wildlife, or activities. Generic superlatives without a concrete noun are rejected. Quotes are stored as static data and do not involve live API calls during quiz use.
 
 ---
 
@@ -91,7 +91,7 @@ Park profiles are built from six public datasets:
 | [IRMA Visitor Use Statistics](https://irma.nps.gov/Stats/) | Monthly visitation and overnight-stay types, 2015–2025 | US federal public domain |
 | [Recreation Information Database (RIDB)](https://ridb.recreation.gov/) | Facility types and campsite counts | US federal public domain |
 | [GBIF / iNaturalist](https://www.gbif.org/) | Species observation counts by taxonomic class | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — © GBIF contributors |
-| [Reddit](https://www.reddit.com/) (r/nationalparks, r/hiking, r/backpacking) | Visitor voice quotes and family-friendliness signal | Public posts; processed with Claude API |
+| [Reddit](https://www.reddit.com/) (r/nationalparks, r/hiking, r/backpacking, r/camping, r/outdoors) | Visitor voice quotes and family-friendliness signal | Public posts; processed with Claude API |
 
 Map tiles by [CARTO](https://carto.com/), © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors.
 
