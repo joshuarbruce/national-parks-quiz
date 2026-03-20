@@ -25,6 +25,16 @@ const PARKS_DATA = [
       "I captured these images on my first visit to Yellowstone. The abundance of wildlife truly blew me away!!",
       "Grand Canyon of Yellowstone from Artist Point — Shot on iPhone 13 Pro.",
       "In Yellowstone National Park, Andy Coleman captured this American bison cloaked in ice and snow"
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Gardiner",
+        "url": "https://www.airbnb.com/gardiner-mt/stays"
+      },
+      {
+        "label": "Airbnb in West Yellowstone",
+        "url": "https://www.airbnb.com/west-yellowstone-mt/stays"
+      }
     ]
   },
   {
@@ -51,6 +61,16 @@ const PARKS_DATA = [
       "Forgot to post this video here of the bobcat we saw on Friday. This was in Yosemite ❤️",
       "Firefall (Horsetail falls on El Capitan), Yosemite National Park Feb 22",
       "I moved to the US two years ago for studies and became obsessed with the nature here. I've been to 9 national parks so far, and my favorite picture is from Yosemite."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in El Portal",
+        "url": "https://www.airbnb.com/el-portal-ca/stays"
+      },
+      {
+        "label": "Airbnb in Mariposa",
+        "url": "https://www.airbnb.com/mariposa-ca/stays"
+      }
     ]
   },
   {
@@ -77,6 +97,16 @@ const PARKS_DATA = [
       "I arrived just before sunset then came back before sunrise the next day to do some light hiking and photography at the South Rim.",
       "I was lucky enough to be at the North Rim after the park had opened up again after the summer's devastating forest fires — I practically had the place to myself.",
       "This was a hike down the canyon 4-5 hours round trip on the South Kaibab Trail. Thankfully had enough water. It was such an amazing experience."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Tusayan",
+        "url": "https://www.airbnb.com/tusayan-az/stays"
+      },
+      {
+        "label": "Airbnb in Williams",
+        "url": "https://www.airbnb.com/williams-az/stays"
+      }
     ]
   },
   {
@@ -102,6 +132,12 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Anyone else ever find the dolphin in the sky at The Narrows Zion?",
       "Located on the less popular eastern side of the park. Road to the trailhead requires driving a few miles on poor dirt roads passable with 4WD. Couple weeks ago I did the 7 mile round-trip hike starting at 530 am for sunrise."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Springdale",
+        "url": "https://www.airbnb.com/springdale-ut/stays"
+      }
     ]
   },
   {
@@ -128,6 +164,12 @@ const PARKS_DATA = [
       "Sunrise at Inspiration Point. 9°F with 20-30mph winds. Completely worth it.",
       "We took a trip to Zion last week and did a day in Bryce Canyon. It was absolutely beautiful with all of the snow!! All pictures are from Sunrise and Sunset Points, Navajo Loop, Peekaboo Loop, Queen's Garden, and Bryce Point",
       "Hiked the Navajo Loop to Peekaboo and Queens Garden then back up to Sunset Point through Wall Street. Absolutely incredible."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Bryce Canyon City",
+        "url": "https://www.airbnb.com/bryce-canyon-city-ut/stays"
+      }
     ]
   },
   {
@@ -154,6 +196,12 @@ const PARKS_DATA = [
       "From Delicate Arch to Double Arch to Park Avenue to Balanced Rock and the 4x4 road back to 191, it was a great day to be in Arches NP.",
       "I've never been to a national park before, Arches was amazing to see! I managed to get a photo of the delicate arch with no one in it.",
       "The Fiery Furnace felt like another planet."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Moab",
+        "url": "https://www.airbnb.com/moab-ut/stays"
+      }
     ]
   },
   {
@@ -180,7 +228,8 @@ const PARKS_DATA = [
       "It's a good mix of everything from Moab to Zion! Less crowds in November. It's cold! But wow breathtaking.",
       "We managed to squeeze in 4 hikes and 2 Fruita pies!",
       "The 'reef' part comes from the Waterpocket Fold, an up-thrust ridge of rock in the Earth's crust that many travelers ref"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "cany",
@@ -206,6 +255,12 @@ const PARKS_DATA = [
       "I had been planning on doing this for 2 years since the last time I was in Moab. Previously I had gone to the Grand View Point, and seen the epic vista, but felt like I hadn't really experienced the park or rather just scratched the surface. Well, traveling the White Rim road I really felt like I got to experience it.",
       "I've been to the Island in the Sky section of Canyonlands probably 12 times but have never made it over to the Needles side. Finally went last weekend and was amazed at what I've been missing! We hiked Druid Arch which was long but definitely worth it if you are up for it!",
       "Between them there's a grandeur and inaccessibility to Canyonlands that makes it feel special."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Moab",
+        "url": "https://www.airbnb.com/moab-ut/stays"
+      }
     ]
   },
   {
@@ -232,6 +287,12 @@ const PARKS_DATA = [
       "Even in the winter, it's always a fun hike up to Dream Lake in Rocky Mountain National Park",
       "Rocky Mountain National Park served me a huge slice of humble pie today. So I've been training pretty hard for my summer vacation, walking 5 miles before work and typically jogging one or two of them, then using one of my days off for long hikes with a decent number of floors.",
       "Dream Lake, one of our favorites at RMNP!"
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Estes Park",
+        "url": "https://www.airbnb.com/estes-park-co/stays"
+      }
     ]
   },
   {
@@ -258,6 +319,12 @@ const PARKS_DATA = [
       "The Hoh rainforest was magical.",
       "I stayed at Port Angeles and drove a bunch. Incredibly diverse landscapes... These are from Rialto beach, Second beach, Hoh and Quinault rainforests, Hurricane Ridge, and Cape Flattery.",
       "The Hoh Rainforest felt like walking through a fairytale — everything draped in moss."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Port Angeles",
+        "url": "https://www.airbnb.com/port-angeles-wa/stays"
+      }
     ]
   },
   {
@@ -285,7 +352,8 @@ const PARKS_DATA = [
       "A cloudy day at North Cascades NP — Diablo Lake",
       "Larch season at the North Cascades NP!",
       "Great day trip to North Cascades National Park. Wish we had planned multiple days as a few hours was definitely not enough. Incredibly beautiful"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "mora",
@@ -311,6 +379,12 @@ const PARKS_DATA = [
       "Hiking the full Skyline was pretty treacherous, particularly on the eastern side but at least the trails were open, unlike Crater Lake where many of them were closed.",
       "All taken from Skyline Trail. Conditions: sideways rain, storm force wind, freezing temps, and zero visibility.",
       "The Mt. Rainier East Loop trail was a whole lot more than anyone in my group had bargained for with the limited information available on conditions."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Ashford",
+        "url": "https://www.airbnb.com/ashford-wa/stays"
+      }
     ]
   },
   {
@@ -337,6 +411,12 @@ const PARKS_DATA = [
       "Woke up early to hike to Watchman's Tower and then went down for a swim right after the sun was up",
       "In addition to the views from the rim trail, the hiking within the park was also amazing",
       "The lake looks like glass. A beautiful sight to behold."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Crater Lake",
+        "url": "https://www.airbnb.com/crater-lake-or/stays"
+      }
     ]
   },
   {
@@ -363,6 +443,12 @@ const PARKS_DATA = [
       "My favorite hike in the entire park…Grove of Titans.",
       "I loved the feeling of driving some of the back roads of the park in the fog and drizzle. Each bend in the road was like driving into the unknown.",
       "I successfully completed the 10 mile fern canyon loop in 5 hours, definitely worth the two blisters I got."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Crescent City",
+        "url": "https://www.airbnb.com/crescent-city-ca/stays"
+      }
     ]
   },
   {
@@ -388,6 +474,12 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "I drove into kings canyon via hwy 180 and drove out of sequoia via south entrance — one of the most terrifying things I've ever done, with hwy 180 having almost zero guardrails and an absolutely massive drop.",
       "By the time I got into the higher elevations at Sequoia National Park, it started snowing on me."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Three Rivers",
+        "url": "https://www.airbnb.com/three-rivers-ca/stays"
+      }
     ]
   },
   {
@@ -414,6 +506,16 @@ const PARKS_DATA = [
       "I wasn't ready for this much majesty — Avalanche lake in Glacier National Park. Did 4.5 miles roundtrip to go fishing here.",
       "Two weeks of setting up and tearing down camp in near-freezing temps and rain, issues with logistics, planning, and group tensions, but it was all worth it for the most jaw-dropping sights I've ever gotten to witness and hike in.",
       "Salamander glacier from view off 'Many Glacier' boat tour at the Many Glacier hotel, and the view at the end of Avalanche Lake trail — incredible September week in GNP!"
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in East Glacier Park",
+        "url": "https://www.airbnb.com/east-glacier-park-mt/stays"
+      },
+      {
+        "label": "Airbnb in West Glacier",
+        "url": "https://www.airbnb.com/west-glacier-mt/stays"
+      }
     ]
   },
   {
@@ -440,6 +542,12 @@ const PARKS_DATA = [
       "Saw on the Jenny Lake hidden falls trail about 5 min from the visitor center",
       "I'm not used to mountains looking so jagged. That means they're younger, right?",
       "I just did a Grand Teton->Yellowstone->Glacier trip and it was epic."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Jackson",
+        "url": "https://www.airbnb.com/jackson-wy/stays"
+      }
     ]
   },
   {
@@ -466,7 +574,8 @@ const PARKS_DATA = [
       "Just a drive in Denali around 11pm when the wildlife comes out and the sun makes the mountains glow",
       "Taken during a flight seeing tour of the park. We were incredibly lucky to have a clear shot of Denali!",
       "One of my fave pictures: Mt. Denali from Stony Hill Overlook (Mile 61.95) - Denali National Park."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "katm",
@@ -491,7 +600,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Whimsical wildlife viewing against a dramatic volcanic landscape.",
       "I was interested in visiting katmai national parks mainly for the bear viewing at Brooks Falls."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "sagu",
@@ -517,7 +627,8 @@ const PARKS_DATA = [
       "I got caught in a monsoon storm on Sunday in Saguaro National Park. The setting sun transformed large raindrops into sparkling jewels.",
       "We got up very early to go hiking, opted for shorter hikes, kept plenty of water on us and in the car, and had trail mix handy at all times.",
       "Three years ago today, a rare winter storm transformed Saguaro National Park into something almost unrecognizable. Snow settled into the canyon, mist softened the distance, and the saguaros stood suspended between seasons."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "pefo",
@@ -543,7 +654,8 @@ const PARKS_DATA = [
       "You would never expect Arizona to previously be a giant river chain over 270 million years ago! If you have been, check out all the amazing trails along the way, especially painted desert and blue mesa!",
       "Lucky to have some sunshine on the Blue Mesa Trail today since it was raining/snowing/hailing on and off all day.",
       "Petrified Forest National Park includes a variety of petrified trees along with a vast painted desert. The fossilized trees date back to about 225 million years."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "gumo",
@@ -569,7 +681,8 @@ const PARKS_DATA = [
       "Most of this hike follows a wash up into the mountains. I continued past the hallway quite a while. The staircase is a bit of a challenge you can either climb up it or inch around the ledge near the top.",
       "Hiked late December, all pictures from the same day at Mckittrick Canyon, Guadalupe Mountains NP!",
       "I made a quick visit to Guadalupe Mountains National Park a few months ago and was greeted with lots of fog. Unfortunately, it never cleared, but I got some really cool eerie desert shots"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "bibe",
@@ -594,7 +707,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "BBNP is a long way from anywhere…8.5 hour drive for me from inside Texas! And then another 30 miles to the Ranger Station/Visitor Center. Night sky was incredible…especially from our campsite along the Rio Grande.",
       "For me it was the remoteness, calm and clarity of the night sky that was magical about Big bend."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "ever",
@@ -620,6 +734,12 @@ const PARKS_DATA = [
       "Saw countless gators on the Shark Valley bike path, plenty of little guys too!",
       "15 mile bike ride through Shark Valley (Everglades National Park)",
       "Visited the Nike Missile Site in Everglades National Park — it's one of those things that you wouldn't expect to find in a national park but then you hear the story and it makes sense."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Homestead",
+        "url": "https://www.airbnb.com/homestead-fl/stays"
+      }
     ]
   },
   {
@@ -646,6 +766,16 @@ const PARKS_DATA = [
       "I hiked more than 100 miles in Great Smoky Mountains NP in June and October — the most visited NPS.",
       "This fall trip from a few years back is still one of the most beautiful fall seasons I've witnessed!",
       "First time there, and I was really surprised by how lush everything was."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Gatlinburg",
+        "url": "https://www.airbnb.com/gatlinburg-tn/stays"
+      },
+      {
+        "label": "Airbnb in Cherokee",
+        "url": "https://www.airbnb.com/cherokee-nc/stays"
+      }
     ]
   },
   {
@@ -672,6 +802,12 @@ const PARKS_DATA = [
       "Recently hiked Old Rag in Shenandoah — check the forecasts folks! Still had fun but it was raining on me the entire time. Scrambling was pretty difficult with how wet it was but lowkey pretty fun.",
       "Two very different days in Shenandoah NP. Last three photos from the summit of Hawksbill on Sat, where it was 30 degrees and icing, and first few photos from an Old Rag on Sunday, clear and gorgeous.",
       "Visited Shenandoah over the last few days and the fog was so dense that the overlooks had 0 visibility. Opted to check out the wildlife instead."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Luray",
+        "url": "https://www.airbnb.com/luray-va/stays"
+      }
     ]
   },
   {
@@ -698,6 +834,12 @@ const PARKS_DATA = [
       "Visit Bass Harbor Lighthouse around sunset. Wait for the tide to recede scurry into the rocks and take a pic.",
       "I highly recommend spending a night stargazing on the cliffs of Acadia. Nothing like it with the sound of the waves washing against the rocky cliffs, the buoy bell in the distance, and the stars shining brightly overhead.",
       "I watched the last sunrise of 2024 and now 2025 from this spot above the water at Otter Cliff in Acadia. Both years cloudless sunrises but a beautiful way to spend the morning."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Bar Harbor",
+        "url": "https://www.airbnb.com/bar-harbor-me/stays"
+      }
     ]
   },
   {
@@ -723,7 +865,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Being able to walk out on Lake Kabetogama was a surreal experience. It definitely was nerve wracking the first few steps but the anxiety quickly faded and turned into pure amazement.",
       "1st night at Voyageurs — arrived late after a long drive but had time to do a little kayaking. so peaceful here, I can't wait to explore more of the islands/hiking trails."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "badl",
@@ -749,7 +892,8 @@ const PARKS_DATA = [
       "The very first thing i saw after entering the park: massive bison getting his morning breakfast in.",
       "Badlands National Park, of course, is famous for its strikingly eroded landscape - a maze of jagged peaks.",
       "Visited badlands national park for the first time over the summer, even managed to stand a few feet away from a rattler!"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "jotr",
@@ -774,6 +918,16 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Joshua Tree is such a gem and the Cholla Cactus Garden for sunrise is one of my favorite places with the park. Cholla cactus play an important role in the park and there are many compositions to be found because they are all different!",
       "We were only there for two nights, but we saw pretty much all of the highlights! Plus, on our last night we headed back to Cap Rock around 8."
+    ],
+    "airbnb_links": [
+      {
+        "label": "Airbnb in Joshua Tree",
+        "url": "https://www.airbnb.com/joshua-tree-ca/stays"
+      },
+      {
+        "label": "Airbnb in Twentynine Palms",
+        "url": "https://www.airbnb.com/twentynine-palms-ca/stays"
+      }
     ]
   },
   {
@@ -800,7 +954,8 @@ const PARKS_DATA = [
       "My first trip to Death Valley was amazing. Capturing the stars there was so much fun, can't wait to come back again!",
       "Milky Way Arch over Badwater Basin, Death Valley NP",
       "It's definitely not known for being hospitable, but the views almost feel eerie with how cool they are. It's not as green as great smoky mountains or as full of wildlife as Yellowstone, but something about it feeling so \"dead\" makes it surreal to be there."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "grba",
@@ -826,7 +981,8 @@ const PARKS_DATA = [
       "When we woke up the first morning it had snowed overnight and it genuinely made everything look like a winter wonderland from a Christmas song. The scenic drive to the top closed so we decided to hike Lehman creek.",
       "Between the wheeler peak drive, the alpine lakes hike, and the archaeological site, it's a great visit! Add to that how much we enjoyed experiencing the universe with no light pollution, and we might have to come back here someday.",
       "An absolute gem of a destination with stunning views of mountains, glaciers, alpine lakes, lush forests, caves and desert, all with barely any crowds."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "thro",
@@ -851,7 +1007,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Loved how remote it felt and thought some of the topographical features were as stunning as a lot of the more popular parks.",
       "An excellent trip to a very underrated national park with photos from both the South Unit and North Unit."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "blca",
@@ -877,7 +1034,8 @@ const PARKS_DATA = [
       "The name of the canyon actually comes from the fact that parts of the gorge only receive about 30 minutes of sunlight on any given day, which shrouds much of it in darkness.",
       "I hiked back up the Warner route in the morning at Black Canyon of the Gunnison in 2018.",
       "I grew up all around the Denver area, hadn't heard of this park until earlier last year. Finally made it out. Such an incredibly underrated park."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "meve",
@@ -903,7 +1061,8 @@ const PARKS_DATA = [
       "The guided tours on all three mesas were excellent (though Long House stood out).",
       "I have previously toured balcony house and cliff palace. I have also hiked the soda canyon trail.",
       "Highly recommend the Petroglyph trail."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "grsa",
@@ -929,7 +1088,8 @@ const PARKS_DATA = [
       "We had a great time exploring these incredible sand dunes! The snow added such a beautiful contrast. And what a workout it was!",
       "Enjoyed 2 days of camping at Piñon Flats campground- though the days were warm, sunset conditions for climbing the dunes were incredible! Only take away: wear more mosquito repellent! They are ridiculous and vicious this year.",
       "You don't really appreciate just how large these dunes are until you stand next to them."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "neri",
@@ -955,7 +1115,8 @@ const PARKS_DATA = [
       "The shots of the fog under the bridge at sunset are unforgettable.",
       "We did the sandstone falls boardwalk, grandview rim trail, castle rock, turkey spur rock, visited the abandoned town of Thurmond, and the canyon rim bridge overlook.",
       "Fresh, unexpected snow over night made it a magical scene with the fog this morning at New River Gorge."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "glba",
@@ -980,7 +1141,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "We recently cruised through Glacier Bay National Park and saw several glaciers, Margerie was the first of them. It is 21 miles (34 km) long and 350 feet thick.",
       "Glacier Bay was truly the highlight of our Alaska cruise - my trip report on our visit through this incredibly beautiful fjord"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "havo",
@@ -1004,7 +1166,8 @@ const PARKS_DATA = [
     "family_score": 0.0,
     "visitor_quotes": [
       "Lava lake at the Halema'uma'u Crater on the summit of Kīlauea volcano."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "hale",
@@ -1030,7 +1193,8 @@ const PARKS_DATA = [
       "Getting up at 3 AM to leave our hotel in Kahului to snag one of the last parking spots at the top of the mountain to view the Haleakalā sunrise was spectacular.",
       "My husband and I hiked a portion of the sliding sands trail and then stayed for the sunset.",
       "Alone inside a volcanic crater, on the Keonehe'ehe'e trail, Haleakalā NP on Maui, HI, USA"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "glca",
@@ -1055,7 +1219,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Glen Canyon National Recreation Area, located along the Colorado River northeast of the Grand Canyon, straddles the border of AZ & UT. It is home to the Glen Canyon Dam, which impounds Lake Powell behind it.",
       "This is from High Spur in the Orange Cliffs section of Glen Canyon National Recreation Area, looking over Millard Canyon and the Maze District of Canyonlands."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "caco",
@@ -1080,7 +1245,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Had an interesting hike this morning, along the Great Island Trails at Cape Cod National Seashore. Just me, and about ten thousand fiddler crabs.",
       "Hiked the Great Island Trail in Wellfleet, MA recently. While there are no mountains in this part of the state the views are still beautiful—beach with windswept sand dunes, salt marsh, and even some forest views."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "pore",
@@ -1106,7 +1272,8 @@ const PARKS_DATA = [
       "We hiked to the historic lighthouse. Last time we were there (over ten years ago), the steps to the lighthouse were closed for safety reasons. This time we were able to walk the 309 steps down to the lighthouse and back up again.",
       "By the time you got down to the beach, it was no longer beach weather — the lighthouse at namesake point was shrouded in clouds for the most part.",
       "Alamere Falls is a rare 'tidefall', a waterfall that flows directly into the ocean. The only other tidefall in California is McWay Falls in Big Sur."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "dino",
@@ -1131,7 +1298,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Hiked 5 miles each way to camp at this spectacular backcountry site at Ruple Point, overlooking the Green River. Didn't see another person in 2 days.",
       "Named because of the vast collection of archeological sites it contains, including a quarry containing many dinosaur bones."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "buff",
@@ -1157,7 +1325,8 @@ const PARKS_DATA = [
       "17.6 mile hike along the Buffalo River in Arkansas this past weekend.",
       "Just finished thru hiking the Buffalo River Trail with my son for his 16th birthday. Perfect weather, iconic views, and memories to last a lifetime.",
       "Standing in the Eye of the Needle, Buffalo National River, Arkansas"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "crmo",
@@ -1182,7 +1351,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Can we do the drive loop and shorter hikes at Devils Orchard, Caves Trail, Spatter Cones etc in 2 or 3 hours?",
       "Getting ready for an overnighter in Craters of the Moon"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "piro",
@@ -1207,7 +1377,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Extending for 42 miles along the shore of Lake Superior with 73,236 acres, the lakeshore showcases the varied colors in the cliffs and rock formations.",
       "Miners Castle Point at Pictured Rocks National Lakeshore features distinctive rock formations visible even in late winter."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "slbe",
@@ -1233,7 +1404,8 @@ const PARKS_DATA = [
       "Sleeping Bear Dunes National Lakeshore was a dream!",
       "Last week, while I was camping at Sleeping Bear Dunes, I saw a sign at the ranger station saying that they were running a trial of an autonomous electric bus on the Pierce Stocking Scenic Drive.",
       "Perfect day on the dunes over lake Michigan. Sleeping Bear Dunes National Lake Shore, South Manitou Island."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "apis",
@@ -1259,7 +1431,8 @@ const PARKS_DATA = [
       "I kayaked the sea caves of the Apostle Islands, and it was every bit as incredible as I'd imagined.",
       "For our first sea kayaking trip to the Apostle Islands, we decided to grab the only backcountry permit available for Sand Island. We had nearly 2 miles of private beach to ourselves.",
       "Backpacking/kayaking the Apostle Islands and the sea caves has been on my bucket list forever and finally did it! Water was never too rough, lots of protection from the open Lake from the islands."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "indu",
@@ -1284,7 +1457,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Went here and was extremely disappointed UNTIL i did my final trail in the park.. Miller woods trail and oh my god wow! This was the highlight of my trip! I never heard of an oak savannah but i came out in love with such a BEAUTIFUL biome!",
       "I have a lot more appreciation for this park seeing it with a beautiful blanket of snow at the end of autumn."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "lavo",
@@ -1310,7 +1484,8 @@ const PARKS_DATA = [
       "It's a great hiking park and you can see a lot in a little time. I had about 2.5 days and it was perfect!",
       "I cannot stress enough how underrated this park is. It had awesome views, cool volcanic activity like Yellowstone, amazing birds/wildflowers and some great hikes.",
       "Stopped by Lassen National Park this summer on a whim. We loved it! Got to meet some park locals (deer and bugs), and swim in the lake."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "chis",
@@ -1336,7 +1511,8 @@ const PARKS_DATA = [
       "Great hiking, epic ocean kayaking to explore sea caves, and fantastic snorkeling around Scorpion Bay. Add in some cute island foxes and breaching humpback whales, and what's not to love?",
       "Three hour ferry to an island that has 15 campsites. Once the day trippers leave, that's all the people on the island, plus a few rangers. Very peaceful.",
       "The sun was out and the island was green and blooming on Anacapa Island, a part of Channel Islands National Park."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "kefj",
@@ -1361,7 +1537,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "For me, it was Harding Icefield in Kenai Fjords. I had heard many good things, but I didn't know I'd be transported to a whole different world! It was life changing!",
       "Made it to the top of the Harding ice field trail in Kenai Fjords NP this summer"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "maca",
@@ -1387,7 +1564,8 @@ const PARKS_DATA = [
       "The two hour tour went by very quickly, and the entrance to this tour was very dramatic.",
       "We did the historical tour this time and it was so good. If you haven't done this one I recommend it. A great 2 hours.",
       "Lantern tours are the coolest!"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "isro",
@@ -1413,7 +1591,8 @@ const PARKS_DATA = [
       "I spent 4 days on Isle Royale hiking the Minong Ridge Trail (55 miles). It's a remote and rugged national park experience with rocky terrain, and almost total solitude.",
       "In September 2023, two friends and I hiked from Windigo to Rock Harbor, about 50 miles over five days, and it turned into one of the most memorable trips I've ever done.",
       "The ferry drop-off really makes it feel like you're leaving civilization behind. I didn't see another person for days."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "viis",
@@ -1439,7 +1618,8 @@ const PARKS_DATA = [
       "The beaches? Next level. Cinnamon Bay was a personal favorite—quiet, stunning, and felt like paradise.",
       "We stayed in Sapphire Bay Condos on St. Thomas, then took the daily water taxi to St. John. Totally worth the effort.",
       "The Annaberg Sugar Mill Historic Site in the US Virgin Islands National Park on St. John are the ruins of a wind powered sugar mill operated by the Danish when they colonized the islands."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "cuva",
@@ -1465,7 +1645,8 @@ const PARKS_DATA = [
       "I did short hikes at Brandywine Falls, the Ledges (my favorite part), and Beaver Marsh, and visited the Boston Mills Visitor Center.",
       "Ledges Trail is a must!",
       "To the people who say that Cuyahoga Valley National Park isn't worth it: Beaver Marsh, The Ledges, Brandywine Falls — All of this is at CVNP, a place that is worth visiting."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "pinn",
@@ -1491,7 +1672,8 @@ const PARKS_DATA = [
       "All photos are from the Balconies Cave and High Peaks Loop which is a perfect day hike. We started at the Chaparral parking area on the west side.",
       "Caves, cliffs, and condors! Spent the beginning of the holiday weekend in California's newest National Park (Pinnacles NP)",
       "Pinnacles is underrated — Underrated park within a short drive from the Bay Area with some really unique hiking experiences."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "cong",
@@ -1517,7 +1699,8 @@ const PARKS_DATA = [
       "It preserves the largest intact tract of old growth hardwood forest in the country, and includes several of the tallest trees of their particular species in this country.",
       "My wife got me a trip to Congaree NP for my birthday and we went today. Now I've only been to 8 of the parks but this one is nothing like any other that I have seen before.",
       "Kayaking Cedar Creek in the Congaree Wilderness."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "wica",
@@ -1542,7 +1725,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "came for the cave, stayed for the bison herd!",
       "I ended up chilling in a pull off with these bison guys for 30 minutes and getting some amazing close ups from inside my car. I never thought they would get so close to the vehicle traffic!"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "bisc",
@@ -1568,7 +1752,8 @@ const PARKS_DATA = [
       "Full day at Biscayne NP, snorkeling and paddle boarding. Winter is shaping up nicely.",
       "Glass water at Biscayne this morning — Water is also super clear",
       "I was in South Florida over the weekend, and got to spend a bit more time exploring the further out parts of Everglades and Biscayne National Parks."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "hosp",
@@ -1593,7 +1778,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Visited Hot Springs earlier in the week and a super underrated park! The city was really cool and historic, went to the BuckStaff Bathhouse, then I absolutely LOVED the trails!",
       "Camping in a class C and hiking (moderate hikes). Any advice related to Acadia, Smoky Mts, Blue Ridge Parkway, Cuyahoga, Adirondacks, White Mountain, Hot Springs, Mammoth Cave, Gettysburg, New River Gorge"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "kova",
@@ -1618,7 +1804,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Distinctive dunes in the Arctic made this a remarkable experience!",
       "The sand dunes of Kobuk Valley, one of the more remote US National Parks, in front of the mighty Koyukuk River and the Baird Mountains of the Brooks Range"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "drto",
@@ -1643,7 +1830,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Took the ferry and cruised through extremely choppy seas only for the clouds to part and the day turn quite beautiful as we arrived at Garden Key!",
       "Recently spent the day at Fort Jefferson @ Dry Tortugas NP — the history and wildlife and adventure of this park puts it in my top 5 for sure!"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "cave",
@@ -1669,7 +1857,8 @@ const PARKS_DATA = [
       "Carlsbad Caverns were wild — Best way to escape the heat is to go as far underground as you can. I got to the park just in time to catch a ranger tour, then hoofed it up to the surface the long way (a good workout).",
       "Crazy to think Jim White just ... walked all the way down there. With a lantern. Absolute mad lad.",
       "My photos don't do the caverns justice. You have to visit the park to be truly in awe of it."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "whsa",
@@ -1695,7 +1884,8 @@ const PARKS_DATA = [
       "Photos are from my hike on Alkali trail. It was chilly and really windy.",
       "I love the way the blue layers of the dunes contrast with the orange ombré sky at sunset.",
       "Went to White Sands last week and this place is magical!! I recommend going in the morning or around 5 or 6 pm, as it does get quite hot. Plus, the white dunes are beautiful with all the pastel colors of dawn and dusk."
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "wrst",
@@ -1720,7 +1910,8 @@ const PARKS_DATA = [
     "visitor_quotes": [
       "Double rainbow over a cabin in Wrangell-St. Elias",
       "Incredible Root Glacier Hike - Wrangell-St. Elias National Park"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "lacl",
@@ -1746,7 +1937,8 @@ const PARKS_DATA = [
       "9 days through Lake Clark National Park, featuring Turquoise Glacier",
       "Mount Iliamna with Mount Redoubt in the foreground, Lake Clark National Park this morning",
       "Found a pretty cool spot for our tent. Lake Clark National Park, AK"
-    ]
+    ],
+    "airbnb_links": []
   },
   {
     "code": "gaar",
@@ -1772,6 +1964,7 @@ const PARKS_DATA = [
       "Glaciers of the Arrigetch Peaks, Gates of the Arctic National Park",
       "Thinking back to a year ago when we were exploring Gates of the Arctic National Park. View from a plane over the Arrigetch Peaks.",
       "Beautiful Takahula Lake, Gates of the Arctic National Park, from a short hike up a nearby ridge"
-    ]
+    ],
+    "airbnb_links": []
   }
 ];

@@ -517,6 +517,12 @@ function renderCards(matches) {
       ? `<div class="card-quotes">${m.park.visitor_quotes.map(q => `<p class="visitor-quote">💬 "${q}"</p>`).join("")}</div>`
       : "";
 
+    const airbnbHtml = (m.park.airbnb_links && m.park.airbnb_links.length)
+      ? `<div class="airbnb-links">${m.park.airbnb_links.map(l =>
+          `<a class="airbnb-btn" href="${l.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">🏠 ${l.label}</a>`
+        ).join("")}</div>`
+      : "";
+
     card.innerHTML = `
       <div class="card-header">
         <div class="rank-badge" style="background:${m.color}">${m.rank}</div>
@@ -535,6 +541,7 @@ function renderCards(matches) {
         ${m.why.map(w => `<p>${w}</p>`).join("")}
       </div>
       ${quotesHtml}
+      ${airbnbHtml}
     `;
 
     card.addEventListener("click", () => focusPark(m.park.code));

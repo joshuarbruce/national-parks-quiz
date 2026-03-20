@@ -582,6 +582,28 @@ html, body {
   margin-bottom: 0.25rem;
 }
 
+.airbnb-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.5rem;
+}
+
+.airbnb-btn {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.airbnb-btn:hover { border-color: #ff5a5f; color: #ff5a5f; }
+
 /* ── Profile bars ────────────────────────────────────────────────────────── */
 .profile-box {
   border-top: 1px solid var(--border);

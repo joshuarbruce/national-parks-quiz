@@ -70,6 +70,51 @@ def get_score(row, col):
     )
 
 
+# ── Airbnb gateway links per park ─────────────────────────────────────────
+# Sourced from airbnb_national_park_urls.csv (column E = URL, column C = town).
+# Parks with no Airbnb data are omitted; they will get an empty list.
+AIRBNB_LINKS = {
+    "glac": [
+        {"label": "Airbnb in East Glacier Park", "url": "https://www.airbnb.com/east-glacier-park-mt/stays"},
+        {"label": "Airbnb in West Glacier",       "url": "https://www.airbnb.com/west-glacier-mt/stays"},
+    ],
+    "yell": [
+        {"label": "Airbnb in Gardiner",          "url": "https://www.airbnb.com/gardiner-mt/stays"},
+        {"label": "Airbnb in West Yellowstone",  "url": "https://www.airbnb.com/west-yellowstone-mt/stays"},
+    ],
+    "grte": [{"label": "Airbnb in Jackson",          "url": "https://www.airbnb.com/jackson-wy/stays"}],
+    "romo": [{"label": "Airbnb in Estes Park",        "url": "https://www.airbnb.com/estes-park-co/stays"}],
+    "grca": [
+        {"label": "Airbnb in Tusayan",           "url": "https://www.airbnb.com/tusayan-az/stays"},
+        {"label": "Airbnb in Williams",          "url": "https://www.airbnb.com/williams-az/stays"},
+    ],
+    "zion": [{"label": "Airbnb in Springdale",        "url": "https://www.airbnb.com/springdale-ut/stays"}],
+    "brca": [{"label": "Airbnb in Bryce Canyon City", "url": "https://www.airbnb.com/bryce-canyon-city-ut/stays"}],
+    "arch": [{"label": "Airbnb in Moab",              "url": "https://www.airbnb.com/moab-ut/stays"}],
+    "cany": [{"label": "Airbnb in Moab",              "url": "https://www.airbnb.com/moab-ut/stays"}],
+    "jotr": [
+        {"label": "Airbnb in Joshua Tree",       "url": "https://www.airbnb.com/joshua-tree-ca/stays"},
+        {"label": "Airbnb in Twentynine Palms",  "url": "https://www.airbnb.com/twentynine-palms-ca/stays"},
+    ],
+    "olym": [{"label": "Airbnb in Port Angeles",      "url": "https://www.airbnb.com/port-angeles-wa/stays"}],
+    "crla": [{"label": "Airbnb in Crater Lake",       "url": "https://www.airbnb.com/crater-lake-or/stays"}],
+    "mora": [{"label": "Airbnb in Ashford",            "url": "https://www.airbnb.com/ashford-wa/stays"}],
+    "redw": [{"label": "Airbnb in Crescent City",     "url": "https://www.airbnb.com/crescent-city-ca/stays"}],
+    "yose": [
+        {"label": "Airbnb in El Portal",         "url": "https://www.airbnb.com/el-portal-ca/stays"},
+        {"label": "Airbnb in Mariposa",          "url": "https://www.airbnb.com/mariposa-ca/stays"},
+    ],
+    "seki": [{"label": "Airbnb in Three Rivers",      "url": "https://www.airbnb.com/three-rivers-ca/stays"}],
+    "grsm": [
+        {"label": "Airbnb in Gatlinburg",        "url": "https://www.airbnb.com/gatlinburg-tn/stays"},
+        {"label": "Airbnb in Cherokee",          "url": "https://www.airbnb.com/cherokee-nc/stays"},
+    ],
+    "acad": [{"label": "Airbnb in Bar Harbor",        "url": "https://www.airbnb.com/bar-harbor-me/stays"}],
+    "shen": [{"label": "Airbnb in Luray",             "url": "https://www.airbnb.com/luray-va/stays"}],
+    "ever": [{"label": "Airbnb in Homestead",         "url": "https://www.airbnb.com/homestead-fl/stays"}],
+}
+
+
 def main():
     master   = pd.read_csv(PROCESSED_DIR / "parks_master.csv")
     features = pd.read_csv(PROCESSED_DIR / "parks_features.csv")
@@ -105,6 +150,7 @@ def main():
             "remote_score":     get_score(row, "remote_score"),
             "family_score":     get_score(row, "family_score"),
             "visitor_quotes":   visitor_quotes.get(code, []),
+            "airbnb_links":     AIRBNB_LINKS.get(code, []),
         })
 
     out = Path(__file__).parent / "parks_data.js"

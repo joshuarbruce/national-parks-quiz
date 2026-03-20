@@ -74,6 +74,10 @@ A floor of 0.2 ensures that neutral answers still contribute some signal — wit
 
 Match percentages are scaled linearly so the best-matching park in the filtered pool always shows 100% and the worst shows 0%.
 
+### Airbnb gateway links
+
+Result cards for select parks include one or two links to Airbnb searches in nearby gateway towns (e.g. Springdale for Zion, Bar Harbor for Acadia). These links are curated manually and cover the 20 most-visited parks in the dataset. Parks with no gateway link show no Airbnb section. The links open Airbnb's town-level stays search in a new tab and are not affiliated with or sponsored by Airbnb.
+
 ### Visitor quotes
 
 The "What visitors say" snippets on result cards are extracted from Reddit post titles and bodies using the Claude API (claude-haiku-4-5). For each park, relevant posts from five subreddits (r/nationalparks, r/hiking, r/backpacking, r/camping, r/outdoors) are filtered for on-topic content, then sent to Claude with a prompt requiring park-specific detail — named trails, landmarks, wildlife, or activities. Generic superlatives without a concrete noun are rejected. Quotes are stored as static data and do not involve live API calls during quiz use.
